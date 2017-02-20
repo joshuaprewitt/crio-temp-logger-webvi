@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="00331F8FDBB80078F0C0ED9708E61B14" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemDiagram" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModel" OldestCompatibleVersion="4.7.0.0" Version="4.7.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModelCore" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="VI SystemDesigner Plugin" Name="http://www.ni.com/SystemDesigner/Vi" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.1170" FeatureSetName="Web Server Compiler" Name="http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.1.49152" />
+		<ApplicationVersionInfo Build="5.0.0.1170" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="1" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager,ProjectDefaultCopyPasteServiceOptOut,EmbeddedReference" Id="2" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.SystemDesigner.SystemDiagram.Moc,EmbeddedReference,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition,ProjectDefaultDragDropServiceOptOut,ProjectDefaultCopyPasteServiceOptOut" Id="4" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Name="SystemDiagram">
+			<SystemDiagram Id="42" SystemDiagramVersion="75" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+				<SystemDiagramRootDiagram Id="57">
+					<SystemHardware Bounds="135 80 315 164" Facade="PartsView" HasLayoutManager="True" Id="284" MainLabel="$aliasName" SubLabel="$modelName" SystemModelContent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice">
+						<SystemHardwareGroupDiagram Bounds="0 65 315 85" Id="285">
+							<SystemHardware Bounds="2 0 311 85" Facade="PartsView" Id="286" MainLabel="$aliasName" SubLabel="$modelName" SystemModelContent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule">
+								<SystemHardwareGroupDiagram Bounds="0 35 311 37" GroupName="Software" Id="287" />
+								<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
+							</SystemHardware>
+						</SystemHardwareGroupDiagram>
+						<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+						<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
+					</SystemHardware>
+				</SystemDiagramRootDiagram>
+				<EnvoyFacadeManager Id="6" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+					<MappingManager Id="8" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+						<Instance Id="62" Source="{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" p9:Process.AliasName="Web Server" p9:Process.AssociatedIdentifier="66" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="439" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Add Header.gvi" p9:Process.AssociatedIdentifier="380" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="443" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="AutoCloseSession.gvi" p9:Process.AssociatedIdentifier="382" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="447" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Check For Success.gvi" p9:Process.AssociatedIdentifier="384" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="451" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Close HTTP Handle.gvi" p9:Process.AssociatedIdentifier="388" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="455" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Configure Proxy Server.gvi" p9:Process.AssociatedIdentifier="390" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="459" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Configure SSL.gvi" p9:Process.AssociatedIdentifier="392" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="463" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="DELETE.gvi" p9:Process.AssociatedIdentifier="394" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="467" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Get Header.gvi" p9:Process.AssociatedIdentifier="396" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="471" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="GET.gvi" p9:Process.AssociatedIdentifier="398" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="475" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="HEAD.gvi" p9:Process.AssociatedIdentifier="400" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="479" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Header Exists.gvi" p9:Process.AssociatedIdentifier="402" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="483" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="List Headers.gvi" p9:Process.AssociatedIdentifier="410" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="487" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Open HTTP Handle.gvi" p9:Process.AssociatedIdentifier="419" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="491" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Parse Headers.gvi" p9:Process.AssociatedIdentifier="421" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="495" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="POST Buffer.gvi" p9:Process.AssociatedIdentifier="423" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="499" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="POST File.gvi" p9:Process.AssociatedIdentifier="425" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="503" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="POST Multipart.gvi" p9:Process.AssociatedIdentifier="427" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="507" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="PUT Buffer.gvi" p9:Process.AssociatedIdentifier="431" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="511" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="PUT File.gvi" p9:Process.AssociatedIdentifier="433" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="515" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Remove Header.gvi" p9:Process.AssociatedIdentifier="435" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="519" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Smart Path To String.gvi" p9:Process.AssociatedIdentifier="437" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Superimposition Id="9" Name="Root Superimposition">
+							<Superimpose Source="62">
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="439" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="443" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="447" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="451" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="455" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="459" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="463" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="467" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="471" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="475" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="479" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="483" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="487" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="491" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="495" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="499" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="503" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="507" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="511" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="515" />
+								<Superimpose Parent="{:/62}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="519" />
+							</Superimpose>
+						</Superimposition>
+					</MappingManager>
+				</EnvoyFacadeManager>
+			</SystemDiagram>
+			<NameScopingEnvoy Bindings="Envoy,DefinitionReference,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel,SystemDiagramEnumerateTargetService,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,ProcessBackedProjectServiceMetaFactory,VIAEnvironment,VireoBrowserTarget,AnyTarget,ContentKind_{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}Process.VireoTarget" Id="66" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel" Name="Web\ Server">
+				<SystemDiagramTarget xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+				<NameScopingEnvoy Bindings="Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="67" ModelDefinitionType="BuildSpecification" Name="Interactive">
+					<BuildSpecificationDefinition Id="68" TopLevelComponentRefId="225" xmlns="http://www.ni.com/GComponent.xsd">
+						<CompilerSymbolTable Id="69" xmlns="http://www.ni.com/PlatformFramework" />
+						<ComponentConfigurationReference AssociatedEnvoyId="222" ConfigName="Default" Id="225" />
+						<ComponentConfigurationReference AssociatedEnvoyId="237" ConfigName="Default" Id="238" />
+						<WeakDefaultComponentConfigurationReference Id="290" Target="NI\.G\ Core\.Configuration\ File\ \(INI\)\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="291" Target="NI\.G\ Core\.Data\ Type\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="292" Target="NI\.G\ Core\.Error\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="293" Target="NI\.G\ Core\.File\ IO\ \(General\)\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="294" Target="NI\.G\ Core\.Input\ Devices\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="295" Target="NI\.G\ Core\.Libraries\ and\ Executables\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="296" Target="NI\.G\ Core\.Numeric\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="297" Target="NI\.G\ Core\.Operating\ System\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="298" Target="NI\.G\ Core\.Registry\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="299" Target="NI\.G\ Core\.Rendezvous\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="300" Target="NI\.G\ Core\.Semaphore\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="301" Target="NI\.G\ Core\.SMTP\ Email\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="302" Target="NI\.G\ Core\.Sound\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="303" Target="NI\.G\ Core\.Strings\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="304" Target="NI\.G\ Core\.TCP\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="305" Target="NI\.G\ Core\.TDMS\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="306" Target="NI\.G\ Core\.Timed\ Loop\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="307" Target="NI\.G\ Core\.Timing\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="308" Target="NI\.G\ Core\.URL\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="309" Target="NI\.G\ Core\.Waveform\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="310" Target="NI\.G\ Core\.Zip\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="311" Target="NI\.G\ Core\.Localization\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="312" Target="NI\.G\ Core\.User\ Interface\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="313" Target="NI\.G\ Core\.Data\ Communications\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="314" Target="NI\.G\ Core\.Color\ Picker\.gcomp" />
+						<ComponentConfigurationReferenceDependencySource Id="523" Target="NI\.G\ Core\.HTTP\.gcomp:Default" />
+					</BuildSpecificationDefinition>
+					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference" Id="222" ModelDefinitionType="SparseEnvoyManager" Name="Default\ Component" Reparentable="False">
+						<SparseEnvoyManager Id="223">
+							<SparseEnvoyManagerDependencySource Id="224" Target=":NullTarget:Default\ Component" />
+						</SparseEnvoyManager>
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="380" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Add\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Add Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="382" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="AutoCloseSession\.gvi" StoragePath="NI.G Core.HTTP.gcomp\AutoCloseSession.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="384" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check\ For\ Success\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Check For Success.gvi" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="386" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Client\ Handle\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Client Handle.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="388" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Close\ HTTP\ Handle\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Close HTTP Handle.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="390" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ Proxy\ Server\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Configure Proxy Server.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="392" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ SSL\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Configure SSL.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="394" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DELETE\.gvi" StoragePath="NI.G Core.HTTP.gcomp\DELETE.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="396" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Get Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="398" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="GET\.gvi" StoragePath="NI.G Core.HTTP.gcomp\GET.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="400" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="HEAD\.gvi" StoragePath="NI.G Core.HTTP.gcomp\HEAD.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="402" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Header\ Exists\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Header Exists.gvi" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="404" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Headers\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Headers.gtype" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference" Id="406" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpClient\.sli" StoragePath="NI.G Core.HTTP.gcomp\httpClient.sli" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference" Id="408" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpWebServerClient\.sli" StoragePath="NI.G Core.HTTP.gcomp\httpWebServerClient.sli" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="410" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="List\ Headers\.gvi" StoragePath="NI.G Core.HTTP.gcomp\List Headers.gvi" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="412" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\ Array\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Multipart Data Array.gtype" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="414" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Multipart Data.gtype" />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="417" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Occurrence\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Occurrence.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="419" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open\ HTTP\ Handle\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Open HTTP Handle.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="421" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Parse\ Headers\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Parse Headers.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="423" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Buffer\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST Buffer.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="425" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ File\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST File.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="427" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Multipart\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST Multipart.gvi" />
+						<SourceFileReference Bindings="NationalInstruments.VI.Design.VIModesPaletteDocumentType,NationalInstruments.SourceModel.PaletteDefinition,Envoy,DefinitionReference,ProjectItemInfoDefaultService,FileReference,SourceFileReference" Id="429" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="POST\.fsd" OverridingModelDefinitionType="NationalInstruments.VI.Design.VIModesPaletteDocumentType" StoragePath="NI.G Core.HTTP.gcomp\POST.fsd" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="431" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ Buffer\.gvi" StoragePath="NI.G Core.HTTP.gcomp\PUT Buffer.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="433" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ File\.gvi" StoragePath="NI.G Core.HTTP.gcomp\PUT File.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="435" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Remove\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Remove Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="437" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Smart\ Path\ To\ String\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Smart Path To String.gvi" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference,RcxRepositoryManagerDefinition" Id="232" ModelDefinitionType="RepositoryManagerDefinition" Name="rcx\.lib" Reparentable="False">
+						<RepositoryManagerDefinition Location="" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="233" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Fpga" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="235" ModelDefinitionType="RepositoryManagerDefinition" Name="instr\.lib" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+					</EmbeddedDefinitionReference>
+					<SourceFileReference Bindings="ComponentMoC,Envoy,DefinitionReference,ComponentDefinition,NationalInstruments.Component.Moc,FileReference,SourceFileReference,EnvoyManager,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application" Id="237" ModelDefinitionType="ComponentDefinition" Name="Component\.gcomp" StoragePath="Component.gcomp" />
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="245" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="246" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,{http://www.ni.com/PlatformFramework}ByReferenceRoot,EmbeddedReference" Id="248" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+						<PackageReferencesDefinition />
+						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference" Id="288" ModelDefinitionType="PackageInterfaceDefinition" Name="ni\-g\-stdlib\-src\-1\.0\.3\.2\.niaddon" StoragePath="ref://ni/g/stdlib-src/1.0.3.2" />
+					</EmbeddedDefinitionReference>
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,Envoy,DefinitionReference,ComponentDefinition,NationalInstruments.Component.Moc,FileReference,SourceFileReference,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="416" ModelDefinitionType="ComponentDefinition" Name="NI\.G\ Core\.HTTP\.gcomp" StoragePath="NI.G Core.HTTP.gcomp\NI.G Core.HTTP.gcomp" />
+				</NameScopingEnvoy>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="228" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Fpga" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="230" ModelDefinitionType="RepositoryManagerDefinition" Name="instr\.lib" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="243" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="244" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+				</EmbeddedDefinitionReference>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,DataDepot,ProjectDefaultCopyPasteServiceOptOut,ProjectDefaultDragDropServiceOptOut,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="33" ModelDefinitionType="DataDepot" Name="DataDepot">
+			<DataDepot />
+		</NameScopingEnvoy>
+		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,NullTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="56" ModelDefinitionType="NullTarget" Name="NullTarget">
+			<NullTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,ComponentDefinition,NationalInstruments.Component.Moc,EmbeddedReference,ComponentBaseType_Library" Id="210" ModelDefinitionType="ComponentDefinition" Name="Default\ Component">
+				<ComponentDefinition DefaultConfigurationName="Default" Id="211" RootNamespaceId="210" xmlns="http://www.ni.com/GComponent.xsd">
+					<Icon Id="212" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="213" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="214" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="215" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="216" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Id="217" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Default Component" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="218" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<CompilerSymbolTable Id="219" xmlns="http://www.ni.com/PlatformFramework" />
+					<ComponentConfiguration Id="220" Name="Default">
+						<CompilerSymbolTable Id="221" xmlns="http://www.ni.com/PlatformFramework" />
+					</ComponentConfiguration>
+				</ComponentDefinition>
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="381" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Add\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Add Header.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="383" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="AutoCloseSession\.gvi" StoragePath="NI.G Core.HTTP.gcomp\AutoCloseSession.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="385" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check\ For\ Success\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Check For Success.gvi" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="387" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Client\ Handle\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Client Handle.gtype" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="389" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Close\ HTTP\ Handle\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Close HTTP Handle.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="391" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ Proxy\ Server\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Configure Proxy Server.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="393" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ SSL\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Configure SSL.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="395" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DELETE\.gvi" StoragePath="NI.G Core.HTTP.gcomp\DELETE.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="397" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Get Header.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="399" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="GET\.gvi" StoragePath="NI.G Core.HTTP.gcomp\GET.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="401" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="HEAD\.gvi" StoragePath="NI.G Core.HTTP.gcomp\HEAD.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="403" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Header\ Exists\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Header Exists.gvi" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="405" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Headers\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Headers.gtype" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference" Id="407" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpClient\.sli" StoragePath="NI.G Core.HTTP.gcomp\httpClient.sli" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference" Id="409" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpWebServerClient\.sli" StoragePath="NI.G Core.HTTP.gcomp\httpWebServerClient.sli" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="411" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="List\ Headers\.gvi" StoragePath="NI.G Core.HTTP.gcomp\List Headers.gvi" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="413" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\ Array\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Multipart Data Array.gtype" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="415" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Multipart Data.gtype" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="418" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Occurrence\.gtype" StoragePath="NI.G Core.HTTP.gcomp\Occurrence.gtype" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="420" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open\ HTTP\ Handle\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Open HTTP Handle.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="422" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Parse\ Headers\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Parse Headers.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="424" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Buffer\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST Buffer.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="426" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ File\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST File.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="428" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Multipart\.gvi" StoragePath="NI.G Core.HTTP.gcomp\POST Multipart.gvi" />
+				<SourceFileReference Bindings="NationalInstruments.VI.Design.VIModesPaletteDocumentType,NationalInstruments.SourceModel.PaletteDefinition,Envoy,DefinitionReference,ProjectItemInfoDefaultService,FileReference,SourceFileReference" Id="430" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="POST\.fsd" OverridingModelDefinitionType="NationalInstruments.VI.Design.VIModesPaletteDocumentType" StoragePath="NI.G Core.HTTP.gcomp\POST.fsd" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="432" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ Buffer\.gvi" StoragePath="NI.G Core.HTTP.gcomp\PUT Buffer.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="434" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ File\.gvi" StoragePath="NI.G Core.HTTP.gcomp\PUT File.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="436" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Remove\ Header\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Remove Header.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="438" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Smart\ Path\ To\ String\.gvi" StoragePath="NI.G Core.HTTP.gcomp\Smart Path To String.gvi" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,{http://www.ni.com/PlatformFramework}ByReferenceRoot,EmbeddedReference" Id="247" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+				<PackageReferencesDefinition>
+					<PackageInterfaceDefinitionContents Contents="NI.G Core.Configuration File (INI).gcomp,NI.G Core.Data Type.gcomp,NI.G Core.Error.gcomp,NI.G Core.File IO (General).gcomp,NI.G Core.Input Devices.gcomp,NI.G Core.Libraries and Executables.gcomp,NI.G Core.Numeric.gcomp,NI.G Core.Operating System.gcomp,NI.G Core.Registry.gcomp,NI.G Core.Rendezvous.gcomp,NI.G Core.Semaphore.gcomp,NI.G Core.SMTP Email.gcomp,NI.G Core.Sound.gcomp,NI.G Core.Strings.gcomp,NI.G Core.TCP.gcomp,NI.G Core.TDMS.gcomp,NI.G Core.Timed Loop.gcomp,NI.G Core.Timing.gcomp,NI.G Core.URL.gcomp,NI.G Core.Waveform.gcomp,NI.G Core.Zip.gcomp,NI.G Core.Localization.gcomp,NI.G Core.User Interface.gcomp,NI.G Core.Data Communications.gcomp,NI.G Core.Color Picker.gcomp" Id="315" PackageInterfaceDefinitionEnvoyId="289" />
+				</PackageReferencesDefinition>
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference" Id="289" ModelDefinitionType="PackageInterfaceDefinition" Name="ni\-g\-stdlib\-src\-1\.0\.3\.2\.niaddon" StoragePath="ref://ni/g/stdlib-src/1.0.3.2" />
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation Author="" ProjectIconBackgroundFilename="{D7561717-D660-4FB3-8F22-FA34432FBB21}" ProjectIconFilename="Empty.png" xmlns="http://www.ni.com/PlatformFramework">
+		<p.Description></p.Description>
+	</ProjectInformation>
+</SourceFile>

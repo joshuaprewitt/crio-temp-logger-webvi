@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="03EF0D356A392DBD1E01B995AF621756" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.0.4408" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.9.0.0" MinimumSemanticallyEquivalentVersion="4.9.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.9.0.0" />
+		<ParsableNamespace AssemblyFileVersion="4.9.0.4408" FeatureSetName="Common Language Components" MinimumParsableVersion="4.8.0.0" MinimumSemanticallyEquivalentVersion="4.8.0.0" Name="http://www.ni.com/MocCommon" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.0.4408" FeatureSetName="Editor" MinimumParsableVersion="4.8.0.0" MinimumSemanticallyEquivalentVersion="4.8.0.0" Name="http://www.ni.com/PanelCommon" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.0.4408" FeatureSetName="Editor" MinimumParsableVersion="4.9.0.0" MinimumSemanticallyEquivalentVersion="4.9.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.9.0.1" />
+		<ApplicationVersionInfo Build="4.9.0.4408" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="String" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVEhLxZYBsYMwDIZjoRawEAtYwEIsYAELtYCWWsACFnh/m9624xIKG9z7jtu1W/o1hHQbbY/xH+qUUh19i62Gl5lFpM7P0XVdHRUMNbzjOE7TpK/13RbwumpYQIyxzq/TzhoEohDCLrTJOXUIfd8/osYzfEqtWaMsdX6Os2okrqHzPKNV9P1LvNWfHaJqgKkkYWGNuYSRNfoahyWmmDbsU9TMXxzOvRpposqcRKWS7lODZVlqQVCJbM/De9TruuqRAbgDyknfpAZZxgw1tkGJhmH4Sb3rEOhefQ3vbVlrKbzTKHgG0i6RrSYtiHMa4UVIcwN7Mbx21tiMsrQsxJXt3ga2ulkQVZeAPDA3cNV4jMdqfKqoHVf+qim3pWFvNXrjs0OeytqDaCIaX2pPqhhqxB3/7Kr6QKrYWWMBmsT7s9CUKm5BmiubuOrfeUy9bX9lhjicV8DFrwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="String" Id="17" Name="ComboboxSelector">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" Name="Headers\.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition Id="14" xmlns="http://www.ni.com/MocCommon">
+					<ComboboxSelector Height="[float]24" Id="15" Label="[UIModel]16" Left="[float]30" MinHeight="[float]24" Top="[float]45" Value="{DataItemBinding Id=17}" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<ComboboxSelectorInfo DisplayValue="[string]Accept-Encoding" IsEnabled="[bool]True" Value="[string]Accept-Encoding" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Accept-Language" IsEnabled="[bool]True" Value="[string]Accept-Language" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Cache-Control" IsEnabled="[bool]True" Value="[string]Cache-Control" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Content-Type" IsEnabled="[bool]True" Value="[string]Content-Type" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Cookie" IsEnabled="[bool]True" Value="[string]Cookie" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Date" IsEnabled="[bool]True" Value="[string]Date" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Host" IsEnabled="[bool]True" Value="[string]Host" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]If-Modified-Since" IsEnabled="[bool]True" Value="[string]If-Modified-Since" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]If-Range" IsEnabled="[bool]True" Value="[string]If-Range" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Pragma" IsEnabled="[bool]True" Value="[string]Pragma" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Referer" IsEnabled="[bool]True" Value="[string]Referer" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]Transfer-Encoding" IsEnabled="[bool]True" Value="[string]Transfer-Encoding" ValueType="[Type]String" />
+						<ComboboxSelectorInfo DisplayValue="[string]User-Agent" IsEnabled="[bool]True" Value="[string]User-Agent" ValueType="[Type]String" />
+					</ComboboxSelector>
+					<Label Id="16" LabelOwner="[UIModel]15" Left="[float]30" Text="[string]header" Top="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

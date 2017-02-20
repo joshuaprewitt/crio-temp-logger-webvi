@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="C47EBC207FB43BFB52D79BD1F4E8C56C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.0.6114" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.0.6114" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.8.0.0" Version="4.9.0.5" />
+		<ParsableNamespace AssemblyFileVersion="4.9.0.6114" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.6" />
+		<ApplicationVersionInfo Build="4.9.0.6114" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition Company="NI" DefaultConfigurationName="Default" Id="4" Product="G Core" RootNamespaceId="93" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="60" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="61" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Center" Id="62" Left="[float]0" TemplateName="Blank" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="6" Name="Default">
+			<CompilerSymbolTable Id="7" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="11" Exported="True" Id="33" />
+			<ComponentItemProperties AssociatedEnvoyId="13" Exported="True" Id="34" />
+			<ComponentItemProperties AssociatedEnvoyId="10" Exported="True" Id="35" />
+			<ComponentItemProperties AssociatedEnvoyId="12" Exported="True" Id="36" />
+			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="37" />
+			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="38" />
+			<ComponentItemProperties AssociatedEnvoyId="20" Exported="True" Id="39" />
+			<ComponentItemProperties AssociatedEnvoyId="16" Exported="True" Id="40" />
+			<ComponentItemProperties AssociatedEnvoyId="19" Exported="True" Id="41" />
+			<ComponentItemProperties AssociatedEnvoyId="17" Exported="True" Id="42" />
+			<ComponentItemProperties AssociatedEnvoyId="21" Exported="True" Id="43" />
+			<ComponentItemProperties AssociatedEnvoyId="22" Exported="True" Id="44" />
+			<ComponentItemProperties AssociatedEnvoyId="24" Exported="True" Id="45" />
+			<ComponentItemProperties AssociatedEnvoyId="23" Exported="True" Id="47" />
+			<ComponentItemProperties AssociatedEnvoyId="25" Exported="True" Id="48" />
+			<ComponentItemProperties AssociatedEnvoyId="26" Exported="True" Id="49" />
+			<ComponentItemProperties AssociatedEnvoyId="31" Exported="True" Id="50" />
+			<ComponentItemProperties AssociatedEnvoyId="29" Exported="True" Id="51" />
+			<ComponentItemProperties AssociatedEnvoyId="27" Exported="True" Id="52" />
+			<ComponentItemProperties AssociatedEnvoyId="30" Exported="True" Id="53" />
+			<ComponentItemProperties AssociatedEnvoyId="56" Exported="True" Id="82" />
+			<ComponentItemProperties AssociatedEnvoyId="9" Exported="True" Id="84" />
+			<ComponentItemProperties AssociatedEnvoyId="87" Exported="True" Id="85" />
+			<ComponentItemProperties AssociatedEnvoyId="55" Exported="True" Id="86" />
+			<ComponentItemProperties AssociatedEnvoyId="94" Exported="True" Id="95" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="1" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="2" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="3" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ Namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="91" Name="NI">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="92" Name="G\ Core">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="93" Name="HTTP">
+						<SourceFileReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference,EnvoyManager" Id="18" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpClient\.sli" StoragePath="httpClient.sli" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference,EnvoyManager" Id="19" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Headers\.gtype" StoragePath="Headers.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference,EnvoyManager" Id="11" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Client\ Handle\.gtype" StoragePath="Client Handle.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference,EnvoyManager" Id="21" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\ Array\.gtype" StoragePath="Multipart Data Array.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference,EnvoyManager" Id="22" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Multipart\ Data\.gtype" StoragePath="Multipart Data.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="9" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check\ For\ Success\.gvi" StoragePath="Check For Success.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="10" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ SSL\.gvi" StoragePath="Configure SSL.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="12" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DELETE\.gvi" StoragePath="DELETE.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="13" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Close\ HTTP\ Handle\.gvi" StoragePath="Close HTTP Handle.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Header\.gvi" StoragePath="Get Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="GET\.gvi" StoragePath="GET.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Header\ Exists\.gvi" StoragePath="Header Exists.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="List\ Headers\.gvi" StoragePath="List Headers.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="20" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="HEAD\.gvi" StoragePath="HEAD.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="23" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Buffer\.gvi" StoragePath="POST Buffer.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="24" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open\ HTTP\ Handle\.gvi" StoragePath="Open HTTP Handle.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="25" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ File\.gvi" StoragePath="POST File.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="26" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="POST\ Multipart\.gvi" StoragePath="POST Multipart.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="27" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Remove\ Header\.gvi" StoragePath="Remove Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="28" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Smart\ Path\ To\ String\.gvi" StoragePath="Smart Path To String.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="29" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ File\.gvi" StoragePath="PUT File.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="30" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Parse\ Headers\.gvi" StoragePath="Parse Headers.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="31" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PUT\ Buffer\.gvi" StoragePath="PUT Buffer.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference,EnvoyManager" Id="55" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Occurrence\.gtype" StoragePath="Occurrence.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="56" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Add\ Header\.gvi" StoragePath="Add Header.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="57" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="AutoCloseSession\.gvi" StoragePath="AutoCloseSession.gvi" />
+						<SourceFileReference Bindings="NationalInstruments.VI.Design.VIModesPaletteDocumentType,NationalInstruments.SourceModel.PaletteDefinition,Envoy,DefinitionReference,ProjectItemInfoDefaultService,FileReference,SourceFileReference" Id="58" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="POST\.fsd" OverridingModelDefinitionType="NationalInstruments.VI.Design.VIModesPaletteDocumentType" StoragePath="POST.fsd" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="87" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configure\ Proxy\ Server\.gvi" StoragePath="Configure Proxy Server.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibrary,{http://www.ni.com/ExternalCode}SharedLibrary.Moc,FileReference,SourceFileReference,EnvoyManager" Id="94" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="httpWebServerClient\.sli" StoragePath="httpWebServerClient.sli" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="88" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="NI\.G\ Core\.HTTP\.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference Bindings="Envoy,ContentReference" ContentIdentifier="6" Id="89" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

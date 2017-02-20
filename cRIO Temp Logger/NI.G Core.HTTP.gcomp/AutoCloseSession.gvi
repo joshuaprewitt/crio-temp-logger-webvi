@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="29D8EB59ED91B616DA65200B5B8685A6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.0.0.543" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.543" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.543" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.543" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.543" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="5.0.0.543" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AutoCloseSession" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="33" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="40" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<CaseStructure Bounds="500 370 145 185" DataType="@385566c0ea5f45eb8fabf7866525c1c7" Default="15" Id="14" Selected="16" UserSelectorBounds="22 0 100 17">
+				<CaseStructure.Case Bounds="5 5 135 175" Id="15" Pattern="Default" />
+				<CaseStructure.Case Bounds="5 5 135 175" Id="16" Pattern="0">
+					<MethodCall Bounds="15 90 40 40" DomainName="NI:G Core:HTTP" Id="19" ResolveFailedHint="&quot;C:\\NG\\main\\LabVIEW\\vi.lib\\Components\\HTTP\\Close HTTP Handle.gvi&quot;" Target="NI:G\ Core:HTTP:Close\ HTTP\ Handle\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="client handle" />
+								<Parameter Id="L3" Desc="error in" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@385566c0ea5f45eb8fabf7866525c1c7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="20" Joints="N(18:16)|(4,95) N(19:L0)|(15,95)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 30 13 10" Docking="Left" Id="17" Terminals="14=37, 15, 16" />
+				<CaseStructure.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="18" Terminals="14=43, 15, 16=20" />
+			</CaseStructure>
+			<Comment Bounds="470 315 180 42" Id="25" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"The user did not pass in a \r\nvalid session so close the one\r\nwe opened."</p.Text>
+			</Comment>
+			<DataAccessor Bounds="445 400 40 15" DataItem="33" Id="34" Label="35" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@385566c0ea5f45eb8fabf7866525c1c7" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="34" Bounds="324 400 116 14" Id="35" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>User supplied handle</p.Text>
+			</NodeLabel>
+			<Wire Id="37" Joints="N(34:Value)|(485,405) N(17:14)|(496,405)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="445 465 40 15" DataItem="40" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@385566c0ea5f45eb8fabf7866525c1c7" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="41" Bounds="312 465 128 14" Id="42" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Auto-generated handle</p.Text>
+			</NodeLabel>
+			<Wire Id="43" Joints="N(41:Value)|(485,470) N(18:14)|(496,470)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<NumericText BaseName="[string]Numeric" Height="[float]36" Id="44" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]45" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]116" Value="{DataItemBinding Id=33}" ValueFormatter="[string]LV:G6" ValueType="[Type]@385566c0ea5f45eb8fabf7866525c1c7" Width="[float]75" p4:ControlDefinitionChecksum="jxZQ5pPGonpUOtyHnYos/A==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:HTTP:Client\ Handle\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</NumericText>
+			<Label Height="[float]16" Id="45" LabelOwner="[UIModel]44" Left="[float]100" Text="[string]User supplied handle" Top="[float]96" Width="[float]112" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]36" Id="47" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]48" Left="[float]100" MinHeight="[float]24" TabIndex="[int]1" Top="[float]212" Value="{DataItemBinding Id=40}" ValueFormatter="[string]LV:G6" ValueType="[Type]@385566c0ea5f45eb8fabf7866525c1c7" Width="[float]75" p4:ControlDefinitionChecksum="jxZQ5pPGonpUOtyHnYos/A==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:HTTP:Client\ Handle\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</NumericText>
+			<Label Height="[float]16" Id="48" LabelOwner="[UIModel]47" Left="[float]100" Text="[string]Auto-generated handle" Top="[float]192" Width="[float]124" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" CallUsage="Required" DataType="@385566c0ea5f45eb8fabf7866525c1c7" Id="33" Name="User supplied handle" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:HTTP:Client\ Handle\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@385566c0ea5f45eb8fabf7866525c1c7" Id="40" Name="Auto-generated handle" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:HTTP:Client\ Handle\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="385566c0ea5f45eb8fabf7866525c1c7">
+			<Attributed AttributedType="@c36a7587c369402c99076f34832b1e39">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:HTTP" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c36a7587c369402c99076f34832b1e39">
+			<Typedef TypedefName="Client Handle.gtype" UnderlyingType="UInt32" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="NI:G\ Core:HTTP:Close\ HTTP\ Handle\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 36,1 C 37.654,1 39,2.293 39,3.947 L 39,36 C 39,37.654 37.654,39 36,39 L 4.083,39 C 2.429,39 1,37.654 1,36 L 1,3.947 C 1,2.293 2.429,1 4.083,1 L 36,1 " Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 36,1 C 37.654,1 39,2.293 39,3.947 L 39,36 C 39,37.654 37.654,39 36,39 L 4.083,39 C 2.429,39 1,37.654 1,36 L 1,3.947 C 1,2.293 2.429,1 4.083,1 L 36,1  M 36,0 L 4.083,0 C 1.883,0 0,1.747 0,3.947 L 0,36 C 0,38.2 1.883,40 4.083,40 L 36,40 C 38.2,40 40,38.2 40,36 L 40,3.947 C 40,1.747 38.2,0 36,0 L 36,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 38,36.053 C 38,37.153 37.1,38 36,38 L 4,38 C 2.9,38 2,37.153 2,36.053 L 2,4 C 2,2.9 2.9,2 4,2 L 36,2 C 37.1,2 38,2.9 38,4 L 38,36.053 Z" Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 38,4 L 38,12 L 2,12 L 2,4 C 2,2.9 2.9,2 4,2 L 36,2 C 37.1,2 38,2.9 38,4 Z" Fill="[SMSolidColorBrush]#ff62af35" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 14.414,10 L 12.867,10 L 12.867,7.357 L 10.582,7.357 L 10.582,10 L 9.034,10 L 9.034,4 L 10.581,4 L 10.581,6.196 L 12.866,6.196 L 12.866,4 L 14.413,4 L 14.413,10 Z M 20.639,5.161 L 18.765,5.161 L 18.765,10 L 17.218,10 L 17.218,5.161 L 15.344,5.161 L 15.344,4 L 20.639,4 L 20.639,5.161 Z M 26.265,5.161 L 24.391,5.161 L 24.391,10 L 22.844,10 L 22.844,5.161 L 20.97,5.161 L 20.97,4 L 26.265,4 L 26.265,5.161 Z M 32.148,5.894 C 32.148,6.163 32.101,6.425 32.007,6.682 C 31.913,6.939 31.779,7.154 31.604,7.329 C 31.365,7.565 31.098,7.744 30.804,7.865 C 30.51,7.986 30.144,8.046 29.706,8.046 L 28.743,8.046 L 28.743,10 L 27.196,10 L 27.196,4 L 29.743,4 C 30.124,4 30.446,4.033 30.708,4.099 C 30.97,4.165 31.202,4.264 31.403,4.395 C 31.645,4.553 31.829,4.756 31.957,5.003 C 32.084,5.251 32.148,5.547 32.148,5.894 Z M 30.548,5.928 C 30.548,5.759 30.502,5.614 30.411,5.492 C 30.32,5.37 30.214,5.285 30.093,5.236 C 29.932,5.172 29.775,5.136 29.622,5.13 C 29.469,5.123 29.265,5.12 29.01,5.12 L 28.744,5.12 L 28.744,6.913 L 29.187,6.913 C 29.45,6.913 29.667,6.897 29.838,6.865 C 30.009,6.833 30.152,6.769 30.267,6.672 C 30.366,6.586 30.438,6.484 30.483,6.364 C 30.526,6.245 30.548,6.1 30.548,5.928 Z" Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 15.328,15.967 L 21.024,21.723 L 26.782,16.029 L 30.037,19.318 L 24.278,25.015 L 29.975,30.773 L 26.685,34.027 L 20.989,28.267 L 15.231,33.965 L 11.976,30.676 L 17.732,24.98 L 12.038,19.196 L 15.328,15.967 Z" Fill="[SMSolidColorBrush]#ff4d4d4d" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							</Canvas>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

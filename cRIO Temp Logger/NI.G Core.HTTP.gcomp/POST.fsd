@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7957224172BF095AC47F76F8AA6DA201" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.0.4408" FeatureSetName="Editor" MinimumParsableVersion="4.9.0.0" MinimumSemanticallyEquivalentVersion="4.9.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.9.0.1" />
+		<ApplicationVersionInfo Build="4.9.0.4408" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<PaletteDefinition BindingKeywords="Modes" PaletteBaseName="Diagram" xmlns="http://www.ni.com/PlatformFramework">
+		<ModesPaletteContentCategory Display="POST" Id="1" ModeDisplay="">
+			<PaletteContentLeaf Display="POST Buffer" Id="2" MethodTarget="NI:G\ Core:HTTP:POST\ Buffer\.gvi" />
+			<PaletteContentLeaf Display="POST File" Id="3" MethodTarget="NI:G\ Core:HTTP:POST\ File\.gvi" />
+			<PaletteContentLeaf Display="POST Multipart" Id="4" MethodTarget="NI:G\ Core:HTTP:POST\ Multipart\.gvi" />
+		</ModesPaletteContentCategory>
+	</PaletteDefinition>
+</SourceFile>
