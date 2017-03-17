@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E442F32281B69A597EE177A4BBFD40C9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DD4FC1CF841D796ABD3100E536EF292F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.1" />
 		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.3" Version="5.0.0.5" />
 		<ApplicationVersionInfo Build="5.0.0.1770" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition DefaultConfigurationName="Default" Id="1" RootNamespaceId="13" UserVersion="1.0.0.10" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition DefaultConfigurationName="Default" Id="1" RootNamespaceId="13" UserVersion="1.0.0.11" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
