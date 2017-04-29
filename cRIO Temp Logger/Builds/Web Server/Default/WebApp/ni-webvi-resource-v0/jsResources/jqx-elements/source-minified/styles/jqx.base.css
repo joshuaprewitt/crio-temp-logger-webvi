@@ -134,6 +134,7 @@ jqx-power-button {
     jqx-circular-progress-bar[disabled],
     jqx-gauge[disabled],
     jqx-numeric-text-box[disabled],
+    jqx-item[disabled],
     jqx-list-box[disabled],
     jqx-scroll-bar[disabled],
     jqx-power-button[disabled] {
@@ -234,7 +235,6 @@ jqx-repeat-button {
         jqx-button button.active,
         jqx-toggle-button button:active,
         jqx-toggle-button button.active,
-        jqx-toggle-button[checked] button,
         jqx-repeat-button button:active,
         jqx-repeat-button button.active {
             color: #111;
@@ -242,6 +242,37 @@ jqx-repeat-button {
             background-color: #BDBDBD;
             -webkit-transition: background-color 100ms linear;
             transition: background-color 100ms linear;
+        }
+
+    jqx-button[readonly] button,
+     jqx-toggle-button[readonly] button,
+     jqx-repeat-button[readonly] button {
+         cursor: default;
+     }
+ 
+         jqx-button[readonly] button:active,
+         jqx-button[readonly] button.active,
+         jqx-toggle-button[readonly] button:active,
+         jqx-toggle-button[readonly] button.active,
+         jqx-repeat-button[readonly] button:active,
+         jqx-repeat-button[readonly] button.active {
+             color: #555;
+             border: 1px solid #A9A9A9;
+             background: transparent;
+             transition: none;
+         }
+ 
+    jqx-power-button[readonly]:active .jqx-input,
+     jqx-power-button[readonly].active .jqx-input,
+     jqx-power-button[readonly]:hover .jqx-input {
+         color: initial;
+         border: 1px solid #A9A9A9;
+         background: transparent;
+         transition: none;
+     }
+    
+             jqx-toggle-button[checked] button {
+            background-color: #999;
         }
 
     jqx-button[disabled] button,
@@ -258,8 +289,6 @@ jqx-repeat-button {
 jqx-item {
     display: block;
     padding: 0;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
     background-color: inherit;
 }
 
@@ -271,19 +300,87 @@ jqx-item {
             color: inherit;
         }
 
+    jqx-item[display-mode="radioButton"][selected],
+    jqx-item[display-mode="checkBox"][selected] {
+        background-color: inherit;
+    }
+
+    jqx-item:focus,
+    jqx-item:focus .jqx-input {
+        outline: none;
+    }
+
+    jqx-item .jqx-input.jqx-hidden {
+        display: none;
+    }
+
+    jqx-item .jqx-input {
+        width: 14px;
+        min-width: 14px;
+        height: 14px;
+        min-height: 14px;
+        background-color: inherit;
+        box-sizing: content-box;
+        box-sizing: initial;
+        position: relative;
+        border-style: solid;
+        border-width: 1px;
+        background-repeat: no-repeat;
+        border-color: #A9A9A9;
+    }
+
+    jqx-item[display-mode="radioButton"] .jqx-input {
+        border-radius: 10px;
+    }
+
+    jqx-item .jqx-input:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        font-family: "jqx-icons";
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        -webkit-font-feature-settings: normal;
+                font-feature-settings: normal;
+        font-variant: normal;
+        text-transform: none;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        line-height: 1.05em;
+    }
+
+    jqx-item[display-mode="checkBox"][selected] .jqx-input:after {
+        content: '\e807';
+    }
+
+    jqx-item[display-mode="radioButton"][selected] .jqx-input:after {
+        content: '\e808';
+    }
+
     jqx-item .jqx-container {
         cursor: default;
+        white-space: nowrap;
     }
 
     jqx-item[disabled] .jqx-container {
         cursor: default;
     }
 
-    jqx-item:focus {
-        outline: none;
+    jqx-item .jqx-input,
+    jqx-item .jqx-item-container {
+        display: inline-block;
+        vertical-align: middle;
     }
 
-    jqx-item .jqx-container {
+    jqx-item .jqx-input {
+        font-size: medium;
+        font-size: initial;
+    }
+
+    jqx-item .jqx-item-container {
         background-color: transparent;
         overflow: hidden;
         white-space: nowrap;
@@ -299,15 +396,17 @@ jqx-list-box {
     min-width: 100px;
     display: block;
     border: 1px solid #A9A9A9;
+    -ms-touch-action: none;
+        touch-action: none;
 }
 
     jqx-list-box input {
-        width: calc(100% - 20px);
+        width: 100%;
         height: 25px;
     }
 
         jqx-list-box input.vertical-scroll-bar-enabled {
-            width: 100%;
+            width: calc(100% - 20px);
         }
 
     jqx-list-box:focus {
@@ -371,8 +470,9 @@ jqx-list-box {
         background-color: transparent;
     }
 
-    jqx-list-box .jqx-items-container > span {
+    jqx-list-box .jqx-items-container #itemDummy {
         white-space: nowrap;
+        display: inline-block;
     }
 
     jqx-list-box .jqx-items-container.horizontal-scroll-bar-enabled {
@@ -401,13 +501,21 @@ jqx-list-box {
         position: relative;
         -moz-user-select: none;
         -webkit-user-select: none;
+        -ms-touch-action: none;
+            touch-action: none;
     }
 
-        jqx-list-box jqx-item[disabled] {
+        jqx-list-box jqx-item.jqx-header-item {
             font-weight: 700;
             text-align: left;
             vertical-align: middle;
+            -ms-touch-action: none;
+                touch-action: none;
         }
+
+            jqx-list-box jqx-item.jqx-header-item.hovered {
+                color: inherit;
+            }
 
     jqx-list-box[disabled] jqx-item {
         color: inherit;
@@ -430,6 +538,249 @@ jqx-list-box {
                 user-select: none;
         text-align: center;
     }
+
+    jqx-list-box .jqx-loader.jqx-hidden {
+        display: none;
+    }
+
+    jqx-list-box .jqx-loader {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+        opacity: 0.85;
+        text-align: left;
+        border: 6px solid rgba(43, 51, 63, .1);
+        box-sizing: border-box;
+        background-clip: padding-box;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    jqx-list-box[loading-indicator-position="center"] .jqx-loader {
+        width: 40px;
+        height: 40px;
+    }
+
+    jqx-list-box[loading-indicator-position="bottom"] .jqx-loader-container.jqx-hidden,
+    jqx-list-box[loading-indicator-position="top"] .jqx-loader-container.jqx-hidden {
+        display: none;
+    }
+
+    jqx-list-box[loading-indicator-position="top"] .jqx-loader-container,
+    jqx-list-box[loading-indicator-position="bottom"] .jqx-loader-container {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 10%;
+        background-color: #F2F2F2;
+        overflow: hidden;
+        -webkit-animation: jqx-loader-container-pop-up-down 0.4s linear;
+                animation: jqx-loader-container-pop-up-down 0.4s linear;
+    }
+
+    jqx-list-box[loading-indicator-position="bottom"] .jqx-loader-container {
+        top: -10%;
+    }
+
+    jqx-list-box[loading-indicator-position="top"] .jqx-loader-container {
+        top: 0;
+        position: absolute;
+        -webkit-animation: jqx-loader-container-pop-up-top 0.4s linear;
+                animation: jqx-loader-container-pop-up-top 0.4s linear;
+    }
+
+    jqx-list-box[loading-indicator-position="top"] .jqx-loader,
+    jqx-list-box[loading-indicator-position="bottom"] .jqx-loader {
+        left: 20%;
+    }
+
+    jqx-list-box[loading-indicator-position="top"] .jqx-loader-label,
+    jqx-list-box[loading-indicator-position="bottom"] .jqx-loader-label {
+        position: absolute;
+        display: block;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+        left: 60%;
+        font-family: inherit;
+        font-size: inherit;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    jqx-list-box .jqx-loader::after,
+    jqx-list-box .jqx-loader::before {
+        content: "";
+        position: absolute;
+        margin: -6px;
+        box-sizing: inherit;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        opacity: 1;
+        border: inherit;
+        border-color: transparent;
+        border-top-color: transparent;
+        border-width: 6px;
+        -webkit-animation-delay: 0.44s;
+                animation-delay: 0.44s;
+    }
+
+    jqx-list-box .jqx-loader::before,
+    jqx-list-box .jqx-loader::after {
+        -webkit-animation: jqx-loader-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, jqx-loader-spin-fade 1.1s linear infinite;
+                animation: jqx-loader-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, jqx-loader-spin-fade 1.1s linear infinite;
+    }
+
+@-webkit-keyframes jqx-loader-container-pop-up-down {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: -2%;
+    }
+
+    35% {
+        top: -4%;
+    }
+
+    60% {
+        top: -8%;
+    }
+
+    100% {
+        top: -10%;
+    }
+}
+
+@keyframes jqx-loader-container-pop-up-down {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: -2%;
+    }
+
+    35% {
+        top: -4%;
+    }
+
+    60% {
+        top: -8%;
+    }
+
+    100% {
+        top: -10%;
+    }
+}
+
+@-webkit-keyframes jqx-loader-container-pop-up-top {
+    0% {
+        top: -10%;
+    }
+
+    20% {
+        top: -8%;
+    }
+
+    35% {
+        top: -4%;
+    }
+
+    60% {
+        top: -2%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes jqx-loader-container-pop-up-top {
+    0% {
+        top: -10%;
+    }
+
+    20% {
+        top: -8%;
+    }
+
+    35% {
+        top: -4%;
+    }
+
+    60% {
+        top: -2%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes jqx-loader-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes jqx-loader-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes jqx-loader-spin-fade {
+    0% {
+        border-top-color: #7A7A7A;
+    }
+
+    20% {
+        border-top-color: #7A7A7A;
+    }
+
+    35% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: #7A7A7A;
+    }
+
+    100% {
+        border-top-color: #7A7A7A;
+    }
+}
+
+@keyframes jqx-loader-spin-fade {
+    0% {
+        border-top-color: #7A7A7A;
+    }
+
+    20% {
+        border-top-color: #7A7A7A;
+    }
+
+    35% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: #7A7A7A;
+    }
+
+    100% {
+        border-top-color: #7A7A7A;
+    }
+}
 
 /* jqx-numeric-text-box */
 
@@ -538,7 +889,7 @@ jqx-numeric-text-box[spin-buttons] input {
 
 /* radix display button only */
 jqx-numeric-text-box[radix-display] input {
-    width: calc(100% - 18px);
+    width: 90%;
 }
 
 /* unit display only */
@@ -548,7 +899,7 @@ jqx-numeric-text-box[show-unit] input {
 
 /* spin buttons and radix display button */
 jqx-numeric-text-box[spin-buttons][radix-display] input {
-    width: calc(100% - 18px - 18px);
+    width: calc(100% - 18px - 10%);
 }
 
 /* spin buttons and unit display */
@@ -558,12 +909,12 @@ jqx-numeric-text-box[spin-buttons][show-unit] input {
 
 /* radix display button and unit display */
 jqx-numeric-text-box[radix-display][show-unit] input {
-    width: calc(100% - 18px - 28px);
+    width: calc(100% - 10% - 28px);
 }
 
 /* buttons and unit display */
 jqx-numeric-text-box[spin-buttons][radix-display][show-unit] input {
-    width: calc(100% - 28px - 18px - 18px);
+    width: calc(100% - 28px - 18px - 10%);
 }
 
 jqx-numeric-text-box .jqx-spin-buttons-container {
@@ -579,7 +930,7 @@ jqx-numeric-text-box .jqx-spin-button {
     }
 
 .jqx-numeric-text-box-radix-display {
-    width: 18px;
+    width: 10%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -811,6 +1162,7 @@ jqx-progress-bar[inverted] .jqx-value.jqx-value-animation {
 jqx-circular-progress-bar svg:first-of-type {
     position: absolute;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 jqx-circular-progress-bar .jqx-value,
@@ -858,11 +1210,13 @@ jqx-circular-progress-bar[inverted] svg:first-of-type .jqx-value.jqx-value-anima
             animation: circle-inverted 2s infinite linear;
 }
 
+jqx-circular-progress-bar[indeterminate][inverted] svg:first-of-type,
 jqx-circular-progress-bar[value="null"][inverted] svg:first-of-type {
     -webkit-animation: rotate-circle-inverted 1s infinite linear;
             animation: rotate-circle-inverted 1s infinite linear;
 }
 
+jqx-circular-progress-bar[indeterminate] svg:first-of-type,
 jqx-circular-progress-bar[value="null"] svg:first-of-type {
     -webkit-animation: rotate-circle 1s infinite linear;
             animation: rotate-circle 1s infinite linear;
@@ -1257,7 +1611,6 @@ jqx-circular-progress-bar[value="null"] svg:first-of-type {
                 transform-origin: right;
     }
 }
-
 @keyframes indeterminate-inverted {
     0% {
         right: -100%;
@@ -2159,6 +2512,10 @@ jqx-checkbox {
         content: '\e806';
     }
 
+    jqx-checkbox .jqx-animation {
+        pointer-events: none;
+    }
+
 /* jqx-radio-button */
 
 jqx-radio-button {
@@ -2280,6 +2637,10 @@ jqx-radio-button {
         content: '\e808';
     }
 
+    jqx-radio-button .jqx-animation {
+        pointer-events: none;
+    }
+
 /* jqx-power-button */
 jqx-power-button {
     padding: 0px;
@@ -2393,16 +2754,16 @@ jqx-power-button {
         color: white;
     }
 
+    jqx-power-button .jqx-animation {
+        pointer-events: none;
+    }
+
 /* jqx-switch-button */
-
-/*
-* Horizontal switch
-*/
-
 jqx-switch-button {
     display: inline-block;
     width: 50px;
     height: 20px;
+    box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
     border-radius: 0;
@@ -2423,20 +2784,30 @@ jqx-switch-button {
     }
 
     jqx-switch-button .jqx-container {
-        font-size: 28px;
+        font-size: inherit;
         position: relative;
-        /*overflow: hidden;*/
+        overflow: hidden;
     }
 
-    jqx-switch-button .jqx-thumb.dragged {
-        background-color: #6b6969;
-    }
-
-    jqx-switch-button .jqx-thumb {
+    jqx-switch-button .jqx-inner-container {
+        width: 88px;
+        height: 100%;
         position: absolute;
+        color: inherit;
+        left: 0px;
+        right: auto;
+        top: 0px;
         cursor: pointer;
-        border-radius: 0;
-        background-color: #A9A9A9;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         -webkit-animation-duration: 0.5s;
                 animation-duration: 0.5s;
         -webkit-animation-iteration-count: 1;
@@ -2447,169 +2818,212 @@ jqx-switch-button {
                 animation-direction: normal;
     }
 
-    jqx-switch-button[disabled] .jqx-thumb {
-        background-color: #bbb;
-        cursor: default;
+    jqx-switch-button[orientation="vertical"] .jqx-inner-container {
+        height: 88px;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
-    jqx-switch-button .jqx-thumb::before,
-    jqx-switch-button .jqx-thumb::after {
-        position: absolute;
-        box-sizing: border-box;
-        background-color: #ddd;
-        font-weight: 600;
-        border: white solid 3px;
-        width: 38px;
-        height: 100%;
-        padding-top: 15%;
-        border-width: 2px 0 2px 0;
-        line-height: 12px;
+    jqx-switch-button[disabled] .jqx-inner-container {
+        cursor: auto;
+        cursor: initial;
     }
 
-    jqx-switch-button[orientation="vertical"] .jqx-thumb::before,
-    jqx-switch-button[orientation="vertical"] .jqx-thumb::after {
-        width: 8px;
-        line-height: 100%;
-        text-align: center;
+    jqx-switch-button .jqx-thumb.dragged {
+        background-color: #6b6969;
     }
 
     jqx-switch-button .jqx-thumb {
+        border-radius: 0;
+        background-color: #A9A9A9;
         width: 12px;
+        display: inline-block;
         height: 100%;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
 
-        jqx-switch-button .jqx-thumb::before {
-            padding-left: 4px;
-        }
-
-    jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-        padding-left: 0;
-    }
-
-    jqx-switch-button[inverted] .jqx-thumb::before,
-    jqx-switch-button .jqx-thumb::after {
-        content: ' ';
-        color: rosybrown;
-        background-color: #ddd;
-    }
-
-    jqx-switch-button[inverted] .jqx-thumb::after,
-    jqx-switch-button .jqx-thumb::before {
-        content: ' ';
-        color: #A9A9A9;
-        background-color: #ddd;
-    }
-
-    jqx-switch-button .jqx-thumb::after {
-        direction: rtl;
-        padding-right: 4px;
-        left: 100%;
-    }
-
-    jqx-switch-button[orientation="vertical"] .jqx-thumb::after {
-        padding-right: 0;
-    }
-
-    jqx-switch-button .jqx-thumb::before {
-        left: -38px;
-    }
-
-    jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-        left: -8px;
-    }
-
-    jqx-switch-button:focus .jqx-switch-button-button-container {
-        border-color: #ccc;
-    }
-
-    jqx-switch-button.animation .jqx-thumb {
-        -webkit-animation-name: jqx-switch-button-check-uncheck-horizontal;
-                animation-name: jqx-switch-button-check-uncheck-horizontal;
-    }
-
-    jqx-switch-button .jqx-thumb {
-        right: 0;
-        left: auto;
-    }
-
-        jqx-switch-button .jqx-thumb.dragged {
-            right: auto;
-            left: 0;
-            -webkit-animation-name: none;
-                    animation-name: none;
-        }
-
-    jqx-switch-button[inverted].animation .jqx-thumb {
-        -webkit-animation-name: jqx-switch-button-check-uncheck-horizontal-inverted;
-                animation-name: jqx-switch-button-check-uncheck-horizontal-inverted;
-    }
-
-    jqx-switch-button[inverted] .jqx-thumb {
-        left: 0;
-        right: auto;
-    }
-
-        jqx-switch-button[inverted] .jqx-thumb.dragged {
-            left: auto;
-            right: 0;
-            -webkit-animation-name: none;
-                    animation-name: none;
-        }
-
-    jqx-switch-button[checked].animation .jqx-thumb {
-        -webkit-animation-name: jqx-switch-button-indeterminate-check-horizontal;
-                animation-name: jqx-switch-button-indeterminate-check-horizontal;
+    jqx-switch-button[orientation="vertical"] .jqx-thumb {
+        width: 100%;
+        height: 12px;
     }
 
     jqx-switch-button[checked] .jqx-thumb {
-        left: 0;
-        right: auto;
         background-color: rosybrown;
     }
 
     jqx-switch-button[checked="null"] .jqx-thumb {
-        left: auto;
-        right: auto;
-        -webkit-animation-name: none;
-                animation-name: none;
+        background-color: #A9A9A9;
     }
 
-    jqx-switch-button[checked] .jqx-thumb.dragged {
-        left: auto;
-        right: auto;
-        background-color: #6b6969;
-        -webkit-animation-name: none;
-                animation-name: none;
+    jqx-switch-button .jqx-true-content-container,
+    jqx-switch-button .jqx-false-content-container {
+        width: 38px;
+        height: 100%;
+        background-color: #ddd;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-clip: content-box;
+        padding: 2px 0px 2px 0px;
+        color: inherit;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
 
-    jqx-switch-button[checked][inverted].animation .jqx-thumb {
+    jqx-switch-button[orientation="vertical"] .jqx-true-content-container,
+    jqx-switch-button[orientation="vertical"] .jqx-false-content-container {
+        height: 38px;
+        width: 100%;
+        padding: 0px 2px 0px 2px;
+    }
+
+    jqx-switch-button[checked] .jqx-inner-container {
+        right: 0px;
+        left: auto;
+    }
+
+    jqx-switch-button[checked="null"] .jqx-inner-container {
+        right: auto;
+        left: -18px;
+    }
+
+    jqx-switch-button[orientation="vertical"][checked] .jqx-inner-container {
+        bottom: 0;
+        left: auto;
+        right: auto;
+        top: auto;
+    }
+
+    jqx-switch-button[orientation="vertical"][checked="null"] .jqx-inner-container {
+        bottom: auto;
+        left: auto;
+        right: auto;
+        top: -18px;
+    }
+
+    jqx-switch-button .jqx-true-content-container {
+        background-color: #ddd;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+    }
+
+    jqx-switch-button[inverted] .jqx-true-content-container {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+
+    jqx-switch-button[inverted] .jqx-false-content-container {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+    }
+
+    jqx-switch-button[inverted] .jqx-inner-container {
+        right: 0px;
+        left: auto;
+    }
+
+    jqx-switch-button[inverted][checked] .jqx-inner-container {
+        right: auto;
+        left: 0px;
+    }
+
+    jqx-switch-button[orientation="vertical"][inverted] .jqx-inner-container {
+        bottom: 0px;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    jqx-switch-button[orientation="vertical"][inverted][checked] .jqx-inner-container {
+        bottom: auto;
+        top: 0px;
+        left: auto;
+        right: auto;
+    }
+
+    jqx-switch-button[inverted][checked="null"] .jqx-inner-container {
+        right: auto;
+        left: -18px;
+    }
+
+    jqx-switch-button[orientation="vertical"][inverted][checked="null"] .jqx-inner-container {
+        bottom: auto;
+        top: -18px;
+        left: auto;
+        right: auto;
+    }
+
+    jqx-switch-button .jqx-true-content,
+    jqx-switch-button .jqx-false-content {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        font-size: inherit;
+        font-weight: inherit;
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+        color: inherit;
+    }
+
+    jqx-switch-button[checked="null"] .jqx-true-content-container,
+    jqx-switch-button[checked="null"] .jqx-false-content-container {
+        color: transparent;
+        -ms-user-select: none;
+            user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    jqx-switch-button[checked="null"] .jqx-true-content,
+    jqx-switch-button[checked="null"] .jqx-false-content {
+        visibility: hidden;
+    }
+
+    /*
+* Horizontal switch animations
+*/
+
+    jqx-switch-button.animation .jqx-inner-container {
+        -webkit-animation-name: jqx-switch-button-check-uncheck-horizontal;
+                animation-name: jqx-switch-button-check-uncheck-horizontal;
+    }
+
+    jqx-switch-button[inverted].animation .jqx-inner-container {
+        -webkit-animation-name: jqx-switch-button-check-uncheck-horizontal-inverted;
+                animation-name: jqx-switch-button-check-uncheck-horizontal-inverted;
+    }
+
+    jqx-switch-button[checked].animation .jqx-inner-container {
+        -webkit-animation-name: jqx-switch-button-indeterminate-check-horizontal;
+                animation-name: jqx-switch-button-indeterminate-check-horizontal;
+    }
+
+    jqx-switch-button[checked][inverted].animation .jqx-inner-container {
         -webkit-animation-name: jqx-switch-button-indeterminate-check-horizontal-inverted;
                 animation-name: jqx-switch-button-indeterminate-check-horizontal-inverted;
     }
 
-    jqx-switch-button[checked][inverted] .jqx-thumb {
-        right: 0;
-        left: auto;
-    }
-
-        jqx-switch-button[checked][inverted] .jqx-thumb.dragged {
-            right: auto;
-            left: 0;
-            -webkit-animation-name: none;
-                    animation-name: none;
-        }
-
-    jqx-switch-button[checked="null"].animation .jqx-thumb,
-    jqx-switch-button[checked="null"][inverted].animation .jqx-thumb {
+    jqx-switch-button[checked="null"].animation .jqx-inner-container,
+    jqx-switch-button[checked="null"][inverted].animation .jqx-inner-container {
         -webkit-animation-name: jqx-switch-button-indeterminate-horizontal;
                 animation-name: jqx-switch-button-indeterminate-horizontal;
-    }
-
-    jqx-switch-button[checked="null"] .jqx-thumb,
-    jqx-switch-button[checked="null"][inverted] .jqx-thumb {
-        background-color: #B9B9B9;
-        left: calc(50% - 12px / 2);
-        right: auto;
     }
 
 @-webkit-keyframes jqx-switch-button-indeterminate-horizontal {
@@ -2737,139 +3151,34 @@ jqx-switch-button {
 }
 
 /* 
-*   Vertical switch
+*   Vertical switch animations
 */
 
-jqx-switch-button[orientation="vertical"] .jqx-thumb {
-    width: 100%;
-    height: 12px;
-}
-
-jqx-switch-button[orientation="vertical"][inverted].animation .jqx-thumb {
+jqx-switch-button[orientation="vertical"][inverted].animation .jqx-inner-container {
     -webkit-animation-name: jqx-switch-button-check-uncheck-vertical-inverted;
             animation-name: jqx-switch-button-check-uncheck-vertical-inverted;
 }
 
-jqx-switch-button[orientation="vertical"][inverted] .jqx-thumb {
-    top: 0;
-    bottom: auto;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::after,
-jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-    height: 38px;
-    width: 100%;
-    border-width: 0 2px 0 2px;
-    left: auto;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-    bottom: 100%;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::after {
-    top: 100%;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::after,
-jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-    font-size: 14px;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::before {
-    padding-top: 3px;
-}
-
-jqx-switch-button[orientation="vertical"] .jqx-thumb::after {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-bottom: 3px;
-}
-
-jqx-switch-button[orientation="vertical"].animation .jqx-thumb {
+jqx-switch-button[orientation="vertical"].animation .jqx-inner-container {
     -webkit-animation-name: jqx-switch-button-check-uncheck-vertical;
             animation-name: jqx-switch-button-check-uncheck-vertical;
 }
 
-jqx-switch-button[orientation="vertical"] .jqx-thumb {
-    bottom: 0;
-    top: auto;
-}
-
-    jqx-switch-button[orientation="vertical"] .jqx-thumb.dragged,
-    jqx-switch-button[orientation="vertical"][inverted] .jqx-thumb.dragged {
-        -webkit-animation-name: none;
-                animation-name: none;
-    }
-
-jqx-switch-button[orientation="vertical"][checked].animation .jqx-thumb {
+jqx-switch-button[orientation="vertical"][checked].animation .jqx-inner-container {
     -webkit-animation-name: jqx-switch-button-indeterminate-check-vertical;
             animation-name: jqx-switch-button-indeterminate-check-vertical;
 }
 
-jqx-switch-button[orientation="vertical"][checked] .jqx-thumb {
-    top: 0;
-    bottom: auto;
-}
-
-    jqx-switch-button[orientation="vertical"][checked] .jqx-thumb.dragged {
-        top: auto;
-        bottom: 0;
-        -webkit-animation-name: none;
-                animation-name: none;
-    }
-
-jqx-switch-button[orientation="vertical"][checked][inverted].animation .jqx-thumb {
+jqx-switch-button[orientation="vertical"][checked][inverted].animation .jqx-inner-container {
     -webkit-animation-name: jqx-switch-button-indeterminate-check-vertical-inverted;
             animation-name: jqx-switch-button-indeterminate-check-vertical-inverted;
 }
 
-jqx-switch-button[orientation="vertical"][checked][inverted] .jqx-thumb {
-    bottom: 0;
-    top: auto;
-}
-
-jqx-switch-button[orientation="vertical"][checked="null"][inverted] .jqx-thumb {
-    bottom: calc(50% - 12px / 2);
-    -webkit-animation-name: none;
-            animation-name: none;
-}
-
-jqx-switch-button[orientation="vertical"][checked][inverted] .jqx-thumb.dragged {
-    bottom: auto;
-    top: 0;
-    -webkit-animation-name: none;
-            animation-name: none;
-}
-
-jqx-switch-button[orientation="vertical"][checked="null"].animation .jqx-thumb,
-jqx-switch-button[orientation="vertical"][checked="null"][inverted].animation .jqx-thumb {
+jqx-switch-button[orientation="vertical"][checked="null"].animation .jqx-inner-container,
+jqx-switch-button[orientation="vertical"][checked="null"][inverted].animation .jqx-inner-container {
     -webkit-animation-name: jqx-switch-button-indeterminate-vertical;
             animation-name: jqx-switch-button-indeterminate-vertical;
 }
-
-jqx-switch-button[orientation="vertical"][checked="null"] .jqx-thumb {
-    background-color: #B9B9B9;
-    top: calc(50% - 12px / 2);
-    bottom: auto;
-    left: 0;
-}
-
-    jqx-switch-button[orientation="vertical"][checked="null"] .jqx-thumb.dragged {
-        background-color: #B9B9B9;
-        top: auto;
-        bottom: calc(50% - 12px / 2);
-        -webkit-animation-name: none;
-                animation-name: none;
-        left: 0;
-    }
 
 @-webkit-keyframes jqx-switch-button-indeterminate-vertical {
     0% {
@@ -3216,6 +3525,7 @@ jqx-tank[orientation="horizontal"] .jqx-scale {
 jqx-tank[scale-position="both"] .jqx-scale {
     width: 105px;
     height: 100%;
+    max-width: 47%;
 }
 
 jqx-tank[orientation="horizontal"][scale-position="both"] .jqx-scale {
@@ -3229,6 +3539,7 @@ jqx-tank .jqx-scale {
     margin-left: initial;
     height: calc(100% - 1px);
     width: 105px;
+    max-width: 94%;
 }
 
 jqx-tank .jqx-tooltip.jqx-hidden {
@@ -3831,6 +4142,8 @@ jqx-slider[orientation="vertical"] .jqx-scale-near .jqx-tick {
 
 jqx-slider[orientation="vertical"] .jqx-scale-near .jqx-label {
     right: 12px;
+    bottom: auto;
+    bottom: initial;
 }
 
 jqx-slider[orientation="vertical"] .jqx-scale-far .jqx-label {
@@ -3850,6 +4163,7 @@ jqx-slider[ticks-position="track"] .jqx-tick-minor {
 
 jqx-slider[orientation="vertical"][ticks-position="track"] .jqx-tick {
     width: 100%;
+    height: 1px;
 }
 
 jqx-slider[orientation="vertical"][ticks-position="track"] .jqx-tick-minor {
@@ -3927,6 +4241,8 @@ jqx-slider[readonly] .jqx-value {
 /* jqx-scroll-bar */
 jqx-scroll-bar {
     display: block;
+    -ms-touch-action: none;
+        touch-action: none;
 }
 
     jqx-scroll-bar .jqx-thumb {
@@ -4001,9 +4317,9 @@ jqx-led {
     border-radius: 50%;
 }
 
-jqx-led.square {
-    border-radius: 0px;
-}
+    jqx-led[shape="square"] {
+        border-radius: 0px;
+    }
 
     jqx-led:focus {
         outline: none;
@@ -4041,7 +4357,6 @@ jqx-led.square {
         min-height: 20px;
         padding: 4%;
         background-clip: content-box;
-        background-color: transparent;
         border-style: solid;
         box-sizing: border-box;
         border-width: 1px;
@@ -4050,7 +4365,7 @@ jqx-led.square {
         font-size: inherit;
     }
 
-    jqx-led.square .jqx-input {
+    jqx-led[shape="square"] .jqx-input {
         border-radius: 0px;
     }
 
@@ -4075,41 +4390,80 @@ jqx-led.square {
         color: #111;
         border-color: #A9A9A9;
         background-color: #BDBDBD;
-        -webkit-transition: background-color 100ms linear;
-        transition: background-color 100ms linear;
     }
 
-    jqx-led[checked] .jqx-input {
+    jqx-led .jqx-false-content-container,
+    jqx-led .jqx-true-content-container,
+    jqx-led .jqx-indeterminate-content-container {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: transparent;
+    }
+
+    jqx-led .jqx-true-content-container {
         background-color: #8298c7;
     }
 
-    jqx-led[checked="null"] .jqx-input {
+    jqx-led .jqx-indeterminate-content-container {
         background-color: lightgray;
     }
 
-
-    jqx-led[checked] .jqx-false-content,
-    jqx-led .jqx-indeterminate-content,
-    jqx-led .jqx-true-content {
+    jqx-led[checked] .jqx-false-content-container,
+    jqx-led .jqx-indeterminate-content-container,
+    jqx-led .jqx-true-content-container {
         display: none;
-        border-radius: 50%;
+    }
+
+    jqx-led .jqx-false-content-container,
+    jqx-led[checked] .jqx-true-content-container,
+    jqx-led[checked="null"] .jqx-indeterminate-content-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    jqx-led[checked="null"] .jqx-true-content-container {
+        display: none;
+    }
+
+    jqx-led[shape="square"] .jqx-false-content-container,
+    jqx-led[shape="square"] .jqx-true-content-container,
+    jqx-led[shape="square"] .jqx-indeterminate-content-container {
+        border-radius: 0px;
     }
 
     jqx-led .jqx-false-content,
     jqx-led[checked] .jqx-true-content,
     jqx-led[checked="null"] .jqx-indeterminate-content {
-        display: block;
-        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: 100%;
     }
 
-    jqx-led[checked="null"] .jqx-true-content {
-        display: none;
-    }
-
-    jqx-led.square .jqx-false-content,
-    jqx-led.square .jqx-true-content,
-    jqx-led.square .jqx-indeterminate-content {
-        border-radius: 0px;
+    jqx-led .jqx-animation {
+        pointer-events: none;
     }
 
 /* jqx-gauge */
@@ -4275,6 +4629,10 @@ jqx-gauge[show-unit] .jqx-digital-display .jqx-numeric-text-box-unit-display {
 
 .jqx-hidden {
     display: none;
+}
+
+.jqx-visibility-hidden {
+    visibility: hidden;
 }
 
 .jqx-shown {

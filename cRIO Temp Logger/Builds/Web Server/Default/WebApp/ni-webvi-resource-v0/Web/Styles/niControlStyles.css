@@ -88,156 +88,49 @@ ni-array-viewer {
 /*************************************
 * Boolean Button
 **************************************/
-ni-boolean-button {
-    display: inline-block;
+
+jqx-toggle-button {
+    position: absolute;
 }
 
-ni-boolean-button .ni-boolean-box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* value false and read-only false */
-    border: 1px solid #aaaaaa;
-    background: #efefef;
-}
-
-ni-boolean-button .ni-boolean-box:focus {
-    /* TODO mraj bad for accessibility, maybe should be niEditorStyles? */
-    outline: none;
-}
-
-ni-boolean-button[value] .ni-boolean-box {
-    border-color: #999999;
-    background: #d1d1d1;
-}
-
-ni-boolean-button .ni-glyph {
-    display: none;
-    /* TODO mraj no good way to know if the font fails to load
-    so stuck with broken square. Problem is bigger for fonts than
-    images / js / css because of CORS rules */
-	/* TODO mraj by using an icon font instead of images we have to
-	make sure most font styles do not get inherited*/
+jqx-toggle-button .ni-glyph {
+    display: inline;
     font: normal normal normal normal 1em "NILVJSFontAwesome";
     text-decoration: none;
     margin-right: 10px;
 }
 
-ni-boolean-button .ni-text {
+jqx-toggle-button .ni-hidden {
     display: none;
+}
+
+jqx-toggle-button .ni-text {
+    display: inline;
     text-align: left;
     white-space: pre;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-ni-boolean-button[content-visible] .ni-glyph {
-    /* Font icon rendered sizes, kerning, and baseline are
-    unpredictable. Display as table to make minimium size fit
-    to content and hope the font loads */
-    display: table;
-}
-
-ni-boolean-button[content-visible] .ni-text {
-    display: inline;
-}
-
-/* TODO mraj feels sketchy, should really be any invalid glyph
-but do not know all valid or invalid glyphs */
-ni-boolean-button[glyph="0"] .ni-glyph {
-    display: none;
-}
-
-ni-boolean-button[read-only] .ni-boolean-box {
-    cursor: default;
-}
-
 /*************************************
 * Boolean LED
 **************************************/
-ni-boolean-led {
-    display: inline-block;
+
+jqx-led {
+    position: absolute;
 }
 
-ni-boolean-led .ni-boolean-box {
-    width: 100%;
-    height: 100%;
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* TODO mraj the editor does not emit style for the highlight color and instead emits a property called highlight
-The control uses the highlight property to inline border and background and we use !important to override the inlined style based on value
-Ideally the editor would be better at emitting styles */
-ni-boolean-led:not([value]) .ni-boolean-box {
-    background-color: white !important; /* Background color when false */
-    border-color: rgba(67,134,185,1);   /* Default border color when false */
-}
-
-ni-boolean-led[value] .ni-boolean-box {
-    background-color: rgba(67,134,185,1); /* Default background color when true */
-    border-color: black !important;       /* Border color when true */
-}
-
-ni-boolean-led .ni-boolean-box:focus {
-    /* TODO mraj bad for accessibility, maybe should be niEditorStyles? */
-    outline: none;
-}
-
-ni-boolean-led .ni-true-text,
-ni-boolean-led .ni-false-text {
-    display: none;
-    text-align: center;
-    white-space: pre;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-ni-boolean-led[content-visible] .ni-true-text {
+jqx-led .ni-hidden {
     display: none;
 }
 
-ni-boolean-led[content-visible][value] .ni-true-text {
-    display: inline;
-}
-
-ni-boolean-led[content-visible] .ni-false-text {
-    display: inline;
-}
-
-ni-boolean-led[content-visible][value] .ni-false-text {
+jqx-led[checked] .ni-hidden {
     display: none;
-}
-
-
-ni-boolean-led[shape="round"] {
-    border-radius: 50%;
-}
-
-ni-boolean-led[shape="round"] .ni-boolean-box {
-    border-radius: 50%;
-}
-
-ni-boolean-led[read-only] .ni-boolean-box {
-    cursor: default;
 }
 
 /*************************************
 * Boolean Switch
 **************************************/
-ni-boolean-switch {
-    display: inline-block;
-}
-
-ni-boolean-switch .ni-boolean-box {
-    width: 100%;
-    height: 100%;
-}
 
 /**************************************
 * Boolean Switch (shape power)
@@ -247,67 +140,37 @@ ni-boolean-switch .ni-boolean-box {
 *    </ni-boolean-switch>
 *
 **************************************/
-ni-boolean-switch[shape="power"] .ni-boolean-box {
-	/* TODO mraj by using an icon font instead of images we have to
-	make sure most font styles do not get inherited*/
+
+jqx-power-button {
+    position: absolute;
+}
+
+jqx-power-button .jqx-input:after {
     font: normal normal normal normal 1em "NILVJSFontAwesome";
+    font-size: 20px;
     text-decoration: none;
 	text-shadow: 0px 1px 1px rgba(250,250,250,0.1);
-    display: inline-block;
+    content: '\F011';
     vertical-align: middle;
-    position: relative;
-    border: 1px solid #4d5359;
-    border-radius: 50%;
-    text-align: center;
     background-color: #ebebeb;
 }
 
-ni-boolean-switch[shape="power"] .ni-boolean-box:hover {
-    background-color: white;
-    border: 1px solid #4386b9;
+jqx-power-button[checked] .jqx-input {
+    background-color: #82a3d1;
 }
 
-ni-boolean-switch[shape="power"][value] .ni-boolean-box {
-    background-color: #4386b9;
-    color: white;
+jqx-power-button .jqx-input:after {
+    background-color: transparent;
 }
-
 /**************************************
 * Boolean Switch (shape slider)
 **************************************/
-
-ni-boolean-switch[shape="slider"] .jqx-switchbutton-label-on {
-    background-color: #4386b9;
-    color: #ffffff
+jqx-switch-button {
+    position: absolute;
 }
 
-ni-boolean-switch[shape="slider"] .jqx-switchbutton-label-off {
-    background-color: #ffffff;
-    color: #000000
-}
-
-/* Use visibility instead of display: none because jqx layout is wacky and needs the dimensions */
-ni-boolean-switch[shape="slider"] .jqx-switchbutton-label-on > div,
-ni-boolean-switch[shape="slider"] .jqx-switchbutton-label-off > div {
-    visibility: hidden;
-}
-
-ni-boolean-switch[shape="slider"][content-visible] .jqx-switchbutton-label-on > div {
-    visibility: visible;
-}
-
-ni-boolean-switch[shape="slider"][false-content-visibility] .jqx-switchbutton-label-off > div {
-    visibility: visible;
-}
-
-/* override jqx default font style */
-ni-boolean-switch[shape="slider"] .jqx-widget {
-    font: inherit;
-}
-
-ni-boolean-switch[shape="slider"] .jqx-switchbutton-label {
-    text-transform: none;
-    font: inherit;
+jqx-switch-button .ni-hidden {
+    display: none;
 }
 
 /*************************************
@@ -567,12 +430,20 @@ ni-check-box[content-visible] label {
     display: inline;
 }
 
+jqx-checkbox {
+    position: absolute;
+}
+
+jqx-checkbox .ni-hidden {
+    display: none;
+}
+
 /*************************************
 * Cluster
 **************************************/
 ni-cluster {
     display: inline-block;
-    outline: thick solid #C5C5C5;
+    outline: 1px solid #C5C5C5;
 }
 
 /*************************************
@@ -638,19 +509,10 @@ ni-data-grid .ni-grid-widget-content {
     font: inherit;
 }
 
-/* Customizations to our own NI Elements, when they are in a data grid */
+/* Customizations to our controls, when they are in a data grid */
 
-ni-data-grid ni-boolean-led {
+ni-data-grid jqx-led {
     padding: 2px;
-}
-
-ni-data-grid ni-slider {
-    margin-top: -7px;
-    margin-left: 6px;
-}
-
-ni-data-grid ni-slider div {
-    overflow: visible !important;
 }
 
 ni-data-grid jqx-numeric-text-box input {
@@ -735,6 +597,7 @@ ni-graph-tools .ni-graph-tools-box {
 ni-graph-tools .ni-button-box {
     width: 25%;
     text-align: center;
+    font-size: 12px;
 }
 
 ni-graph-tools .ni-button {
@@ -1276,6 +1139,11 @@ jqx-slider {
     position: absolute;
 }
 
+jqx-tank .jqx-label,
+jqx-slider .jqx-label {
+    color: #2B3033;
+}
+
 /*************************************
 * String Control
 **************************************/
@@ -1558,6 +1426,3 @@ ni-web-application .ni-execution-button.disabled:focus {
     background-color: #414141;
 }
 
-/*************************************
-* Do not place styles at the bottom of the file, place them in the correct section above
-**************************************/

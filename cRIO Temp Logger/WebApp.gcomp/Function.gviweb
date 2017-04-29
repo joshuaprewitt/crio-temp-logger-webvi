@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D1151293342FBBED972AC2350777AFFB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D666D629700015B5D8CD4F1C77C96F96" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.2" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.3" Version="5.0.0.5" />
-		<ApplicationVersionInfo Build="5.0.0.1770" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.49153" Version="5.0.0.49153" />
+		<ApplicationVersionInfo Build="5.0.1.2805" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -35,7 +35,7 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
 			<WhileLoop Bounds="-150 -265 895 375" DiagramId="16" Id="15">
 				<LoopIteration Bounds="0 350 15 15" Id="17" />
@@ -89,7 +89,7 @@
 						</Literal>
 						<Wire Id="1449" Joints="N(68:55)|(4,115) h(31) v(-30) N(1484:L0)|(195,85)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1450" Joints="N(79:Out)|(165,95) h(5) B(1) N(1484:L1)|(195,95) B(1) v(10) N(1484:L2)|(195,105)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="195 80 40 40" DomainName="Application" Id="1484" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Send Message.gviweb&quot;" Target="Application:Send\ Message\.gviweb" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="195 80 40 40" DomainName="Application" Id="1484" ResolveFailedHint="" Target="Application:Send\ Message\.gviweb" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L1" Desc="Topic" />
@@ -166,7 +166,7 @@
 						</Literal>
 						<Wire Facade="WireInvisibleFacade" Id="1092" Joints="N(1091:Out)|(400,55) N(1090:c1t0v)|(400,55)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1101" Joints="N(1102:1040)|(4,45) N(1090:c0t0v)|(400,45)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="465 30 40 40" DomainName="Application" Id="1217" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Reset Aggregates.gviweb&quot;" Target="Application:Reset\ Aggregates\.gviweb" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="465 30 40 40" DomainName="Application" Id="1217" ResolveFailedHint="" Target="Application:Reset\ Aggregates\.gviweb" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="Server" />
@@ -267,7 +267,7 @@
 							<Wire Id="897" Joints="N(1231:R0)|(110,25) N(783:Value)|(133,25)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="922" Joints="N(913:825)|(4,20) h(56) v(5) N(1231:L0)|(70,25)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="923" Joints="N(830:825)|(4,35) N(1231:L1)|(70,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1231" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Read Tag (Double).gviweb&quot;" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1231" ResolveFailedHint="" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Server" />
@@ -286,7 +286,7 @@
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="String" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 						</CaseStructure.Case>
@@ -300,7 +300,7 @@
 							<Wire Id="900" Joints="N(1235:R0)|(110,25) N(781:Value)|(133,25)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="920" Joints="N(913:826)|(4,20) h(56) v(5) N(1235:L0)|(70,25)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="921" Joints="N(830:826)|(4,35) N(1235:L1)|(70,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1235" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Read Tag (Double).gviweb&quot;" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1235" ResolveFailedHint="" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Server" />
@@ -319,7 +319,7 @@
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="String" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 						</CaseStructure.Case>
@@ -333,7 +333,7 @@
 							<Wire Id="904" Joints="N(1239:R0)|(110,25) N(773:Value)|(133,25)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="917" Joints="N(830:901)|(4,35) N(1239:L1)|(70,35)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="919" Joints="N(913:901)|(4,20) h(56) v(5) N(1239:L0)|(70,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1239" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Read Tag (Double).gviweb&quot;" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1239" ResolveFailedHint="" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Server" />
@@ -352,7 +352,7 @@
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="String" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 						</CaseStructure.Case>
@@ -366,7 +366,7 @@
 								<p.Text>Buffer</p.Text>
 							</NodeLabel>
 							<Wire Id="924" Joints="N(1243:R0)|(110,25) N(766:Value)|(133,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1243" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Read Tag (Double).gviweb&quot;" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="70 20 40 40" DomainName="Application" Id="1243" ResolveFailedHint="" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Server" />
@@ -385,7 +385,7 @@
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="String" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 						</CaseStructure.Case>
@@ -403,7 +403,7 @@
 							<Wire Id="1166" Joints="N(1224:R0)|(455,20) N(1199:c0t0v)|(475,20)" xmlns="http://www.ni.com/PlatformFramework" />
 							<BuildCluster Bounds="475 15 40 40" Id="1199" Terminals="outCluster=1204, c0t0v=1166, c1t0v=1154, c2t0v=1155, c3t0v=1156" VerticalChunkCount="4" />
 							<Wire Id="1204" Joints="N(1199:outCluster)|(515,20) N(703:Value)|(538,20)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="415 15 40 40" DomainName="Application" Id="1224" ResolveFailedHint="&quot;C:\\Users\\Public\\GitHub\\crio-temp-logger-webvi\\cRIO Temp Logger\\WebApp.gcomp\\Read Tag (Double).gviweb&quot;" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="415 15 40 40" DomainName="Application" Id="1224" ResolveFailedHint="" Target="Application:Read\ Tag\ \(Double\)\.gviweb" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Server" />
@@ -422,7 +422,7 @@
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="String" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<DataAccessor Bounds="130 75 40 15" DataItem="1452" Id="1453" Label="1456" xmlns="http://www.ni.com/MocCommon">
@@ -470,29 +470,29 @@
 				<LoopTunnel Bounds="-4 100 13 10" Docking="Left" Id="330" Terminals="o0=559, i0=916" />
 				<LoopTunnel Bounds="-4 115 13 10" Docking="Left" Id="1084" Terminals="o0=1085, i0=1083" />
 			</WhileLoop>
-			<Literal Bounds="-270 215 75 15" DataType="String" Facade="String" Id="60" Label="1112" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>jprewitt4</p.Data>
+			<Literal Bounds="-300 215 105 15" DataType="String" Facade="String" Id="60" Label="1112" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>54.82.138.142</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="559" Joints="N(60:Out)|(-195,220) h(25) B(1) N(330:o0)|(-154,220) B(1) v(-270) N(328:o0)|(-154,-50)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="-270 -45 80 15" DataType="String" Facade="String" Id="1079" Label="1111" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>josh-9068</p.Data>
+			<Literal Bounds="-335 -45 145 15" DataType="String" Facade="String" Id="1079" Label="1111" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>ni-crio-9068-190cb7b</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="1085" Joints="N(1079:Out)|(-190,-40) h(10) B(1) h(20) B(2) N(1104:o0)|(-154,-40) B(2) v(275) N(1084:o0)|(-154,235) B(1) v(-95) N(1109:o0)|(-154,-135)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="1079" Bounds="-270 -62 36 14" Id="1111" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="1079" Bounds="-335 -62 36 14" Id="1111" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Target</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="60" Bounds="-270 198 37 14" Id="1112" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="60" Bounds="-300 198 37 14" Id="1112" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Server</p.Text>
 			</NodeLabel>
 		</BlockDiagram>
-		<HtmlFrontPanel Height="[float]667" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]375" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
-			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Send File" Height="[float]40" Id="41" IsMomentary="[bool]True" Label="[UIModel]42" Left="[float]18" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]0" Top="[float]455" Value="{DataItemBinding Id=39}" Width="[float]149" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="42" LabelOwner="[UIModel]41" Left="[float]18" Text="[string]Trigger Send" Top="[float]435" Visible="[bool]False" Width="[float]68" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" FalseContent="[string]Off" Height="[float]16" Id="622" IsMomentary="[bool]False" Label="[UIModel]624" Left="[float]145" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]467" TrueContent="[string]On" Value="{DataItemBinding Id=626}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="624" LabelOwner="[UIModel]622" Left="[float]145" Text="[string]Send File" Top="[float]447" Visible="[bool]False" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlChart DataSource="{DataItemBinding Id=702}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]264" Id="704" Label="[UIModel]713" Left="[float]4" TabIndex="[int]2" Top="[float]174" Width="[float]344" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+		<HtmlFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Send File" Height="[float]40" Id="41" IsMomentary="[bool]True" Label="[UIModel]42" Left="[float]708" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]0" Top="[float]244" Value="{DataItemBinding Id=39}" Width="[float]149" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="42" LabelOwner="[UIModel]41" Left="[float]708" Text="[string]Trigger Send" Top="[float]224" Visible="[bool]False" Width="[float]68" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" FalseContent="[string]Off" Height="[float]16" Id="622" IsMomentary="[bool]False" Label="[UIModel]624" Left="[float]835" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]256" TrueContent="[string]On" Value="{DataItemBinding Id=626}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="624" LabelOwner="[UIModel]622" Left="[float]835" Text="[string]Send File" Top="[float]236" Visible="[bool]False" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlChart DataSource="{DataItemBinding Id=702}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]308" Id="704" Label="[UIModel]713" Left="[float]208" TabIndex="[int]2" Top="[float]38" Width="[float]472" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<HtmlAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="705" Label="[string]" MajorDivisions="[UIModel]1116" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<HtmlRangeLabeledDivisions Id="1116" LabelPresenter="[string]LVRelativeSeconds:0.######" />
 				</HtmlAxis>
@@ -508,30 +508,30 @@
 				<HtmlPlot HorizontalScale="[UIModel]705" Id="939" Label="[string]Avgerage" VerticalScale="[UIModel]706" />
 				<HtmlPlot HorizontalScale="[UIModel]705" Id="940" Label="[string]Maximum" VerticalScale="[UIModel]706" />
 			</HtmlChart>
-			<HtmlPlotLegend Graph="[UIModel]704" Height="[float]104" Id="709" Left="[float]198" MinWidth="[float]145" Top="[float]455" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlCursorLegend Graph="[UIModel]704" Height="[float]202" Id="710" Left="[float]9" MinWidth="[float]270" Top="[float]467" Visible="[bool]False" Width="[float]270" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlScaleLegend Graph="[UIModel]704" Height="[float]60" Id="711" Left="[float]355" MinWidth="[float]145" Top="[float]336" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlGraphTools Graph="[UIModel]704" Height="[float]35" Id="712" Left="[float]4" MinWidth="[float]120" Top="[float]136" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="713" LabelOwner="[UIModel]704" Left="[float]4" Text="[string]Temp" Top="[float]154" Visible="[bool]False" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="767" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]768" Left="[float]23" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]3" Top="[float]84" Value="{DataItemBinding Id=765}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]116" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="768" LabelOwner="[UIModel]767" Left="[float]23" Text="[string]Buffer" Top="[float]64" Width="[float]32" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="770" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]771" Left="[float]228" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]4" Top="[float]84" Value="{DataItemBinding Id=772}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]113" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="771" LabelOwner="[UIModel]770" Left="[float]228" Text="[string]Files Sent" Top="[float]64" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="775" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]777" Left="[float]23" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]5" Top="[float]36" Value="{DataItemBinding Id=779}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]116" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="776" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]778" Left="[float]228" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]6" Top="[float]36" Value="{DataItemBinding Id=780}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]113" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="777" LabelOwner="[UIModel]775" Left="[float]23" Text="[string]Available Memory" Top="[float]16" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="778" LabelOwner="[UIModel]776" Left="[float]228" Text="[string]Available Disk" Top="[float]16" Width="[float]74" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Reset Aggregates" Height="[float]40" Id="970" IsMomentary="[bool]True" Label="[UIModel]972" Left="[float]18" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]7" Top="[float]516" Value="{DataItemBinding Id=974}" Width="[float]149" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" FalseContent="[string]Off" Height="[float]16" Id="971" IsMomentary="[bool]False" Label="[UIModel]973" Left="[float]144" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]8" Top="[float]528" TrueContent="[string]On" Value="{DataItemBinding Id=975}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="972" LabelOwner="[UIModel]970" Left="[float]18" Text="[string]Trigger Reset" Top="[float]496" Visible="[bool]False" Width="[float]71" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="973" LabelOwner="[UIModel]971" Left="[float]144" Text="[string]Reset" Top="[float]508" Visible="[bool]False" Width="[float]29" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlDropDown BaseName="[string]Drop Down" Height="[float]22" Id="1454" Label="[UIModel]1455" Left="[float]226" MinHeight="[float]16" MinWidth="[float]50" TabIndex="[int]9" Top="[float]132" Value="{DataItemBinding Id=1452}" ValueType="[Type]Int32" Width="[float]116" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<HtmlPlotLegend Graph="[UIModel]704" Height="[float]104" Id="709" Left="[float]680" MinWidth="[float]145" Top="[float]38" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlCursorLegend Graph="[UIModel]704" Height="[float]202" Id="710" Left="[float]213" MinWidth="[float]270" Top="[float]375" Visible="[bool]False" Width="[float]270" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlScaleLegend Graph="[UIModel]704" Height="[float]60" Id="711" Left="[float]687" MinWidth="[float]145" Top="[float]244" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlGraphTools Graph="[UIModel]704" Height="[float]35" Id="712" Left="[float]208" MinWidth="[float]120" Top="[float]0" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="713" LabelOwner="[UIModel]704" Left="[float]208" Text="[string]Temp" Top="[float]18" Visible="[bool]False" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="767" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]768" Left="[float]98" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]3" Top="[float]90" Value="{DataItemBinding Id=765}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="768" LabelOwner="[UIModel]767" Left="[float]98" Text="[string]Buffer" Top="[float]70" Width="[float]32" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="770" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]771" Left="[float]98" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]4" Top="[float]140" Value="{DataItemBinding Id=772}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="771" LabelOwner="[UIModel]770" Left="[float]98" Text="[string]Files Sent" Top="[float]120" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="775" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]777" Left="[float]98" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" TabIndex="[int]5" Top="[float]240" Value="{DataItemBinding Id=779}" ValueFormatter="[string]LVSI:N2" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="776" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]778" Left="[float]98" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" TabIndex="[int]6" Top="[float]190" Value="{DataItemBinding Id=780}" ValueFormatter="[string]LVSI:N2" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="777" LabelOwner="[UIModel]775" Left="[float]98" Text="[string]Available Memory" Top="[float]220" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="778" LabelOwner="[UIModel]776" Left="[float]98" Text="[string]Available Disk" Top="[float]170" Width="[float]74" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Reset Aggregates" Height="[float]40" Id="970" IsMomentary="[bool]True" Label="[UIModel]972" Left="[float]708" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]7" Top="[float]305" Value="{DataItemBinding Id=974}" Width="[float]149" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" FalseContent="[string]Off" Height="[float]16" Id="971" IsMomentary="[bool]False" Label="[UIModel]973" Left="[float]834" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]8" Top="[float]317" TrueContent="[string]On" Value="{DataItemBinding Id=975}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="972" LabelOwner="[UIModel]970" Left="[float]708" Text="[string]Trigger Reset" Top="[float]285" Visible="[bool]False" Width="[float]71" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="973" LabelOwner="[UIModel]971" Left="[float]834" Text="[string]Reset" Top="[float]297" Visible="[bool]False" Width="[float]29" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlDropDown BaseName="[string]Drop Down" Height="[float]22" Id="1454" Label="[UIModel]1455" Left="[float]98" MinHeight="[float]16" MinWidth="[float]50" TabIndex="[int]9" Top="[float]40" Value="{DataItemBinding Id=1452}" ValueType="[Type]Int32" Width="[float]95" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<RingSelectorInfo DisplayValue="[string]0" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]0" ValueType="[Type]Int32" />
 				<RingSelectorInfo DisplayValue="[string]1" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]1" ValueType="[Type]Int32" />
 				<RingSelectorInfo DisplayValue="[string]2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]2" ValueType="[Type]Int32" />
 				<RingSelectorInfo DisplayValue="[string]3" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]3" ValueType="[Type]Int32" />
 			</HtmlDropDown>
-			<HtmlLabel Height="[float]16" Id="1455" LabelOwner="[UIModel]1454" Left="[float]226" Text="[string]Channel" Top="[float]112" Width="[float]44" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="1455" LabelOwner="[UIModel]1454" Left="[float]98" Text="[string]Channel" Top="[float]20" Width="[float]44" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="39" Name="Trigger Send" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>

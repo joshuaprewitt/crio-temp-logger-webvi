@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DD4FC1CF841D796ABD3100E536EF292F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="429E2E534C493BA66343117169B2AE5A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.3" Version="5.0.0.5" />
-		<ApplicationVersionInfo Build="5.0.0.1770" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.49153" Version="5.0.0.49153" />
+		<ApplicationVersionInfo Build="5.0.1.2805" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition DefaultConfigurationName="Default" Id="1" RootNamespaceId="13" UserVersion="1.0.0.11" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition DefaultConfigurationName="Default" Id="1" RootNamespaceId="13" UserVersion="1.0.0.14" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
@@ -15,7 +15,7 @@
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
 		<ComponentConfiguration ComponentOutputType="WebApplication" Id="10" Name="Default">
 			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
-			<ComponentItemProperties AssociatedEnvoyId="17" Id="26" TopLevel="True" />
+			<ComponentItemProperties AssociatedEnvoyId="43" Id="44" TopLevel="True" />
 			<WebApplicationOutputTypeProperties Id="14" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
@@ -24,10 +24,10 @@
 		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
 			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="13" Name="Application">
-				<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="C:\Users\Public\GitHub\crio-temp-logger-webvi\cRIO Temp Logger\Function.gviweb" />
 				<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="33" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Reset\ Aggregates\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Reset Aggregates.gviweb" />
 				<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="34" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Read\ Tag\ \(Double\)\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Read Tag (Double).gviweb" />
 				<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="35" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Send\ Message\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Send Message.gviweb" />
+				<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="43" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Function.gviweb" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="WebApp\.gcomp" NameTracksFileName="True">

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C1962B2400B2ED11EDA0766147313D87" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9576CA269E9045184501AE04EFE32921" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.2" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.0.1770" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.3" Version="5.0.0.5" />
-		<ApplicationVersionInfo Build="5.0.0.1770" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.49153" Version="5.0.0.49153" />
+		<ApplicationVersionInfo Build="5.0.1.2805" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -35,12 +35,12 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
 			<ConcatenateStrings Bounds="190 185 40 50" Id="15" Terminals="outString=19, c0t0v=21, c1t0v=16, c2t0v=23, c3t0v=17, c4t0v=25" VerticalChunkCount="5" />
 			<Wire Id="16" Joints="N(27:Value)|(135,195) h(25) v(5) N(15:c1t0v)|(190,200)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="17" Joints="N(32:Value)|(125,230) h(35) v(-10) N(15:c3t0v)|(190,220)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="350 175 40 40" DomainName="NI:HTTP" Id="18" ResolveFailedHint="POST Buffer.gvi, Package: (ni-g-http-src-1.0.0.1, Version: 1.0.0.1)" Target="NI:HTTP:POST\ Buffer\.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="350 175 40 40" DomainName="NI:HTTP" Id="18" ResolveFailedHint="" Target="NI:HTTP:POST\ Buffer\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="client handle" />
@@ -56,19 +56,19 @@
 						<Parameter Id="R3" Desc="error out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
-				<Terminal DataType="@37dcd942c98744d39d4b096e215ae07d" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@947d6c56ec454f9ca31adc474ee0cee1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Path" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Input" Hotspot="15 40" Id="B0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@37dcd942c98744d39d4b096e215ae07d" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@947d6c56ec454f9ca31adc474ee0cee1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Wire Id="19" Joints="N(15:outString)|(230,190) N(18:L1)|(350,190)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="19" Joints="N(15:outString)|(230,190) h(66) B(1) N(18:L1)|(350,190) B(1) v(20) N(39:Value)|(304,210)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="178 186 12 9" DataType="String" Facade="DockedConstantFacade" Id="20" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>http://</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
@@ -76,13 +76,13 @@
 			</Literal>
 			<Wire Facade="WireInvisibleFacade" Id="21" Joints="N(20:Out)|(190,191) h(5) v(-1) N(15:c0t0v)|(190,190)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="178 206 12 9" DataType="String" Facade="DockedConstantFacade" Id="22" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>/nitag/tag/</p.Data>
+				<p.Data>/nitag/v1/tags/</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 				<DockedConstantFacade UndockedSize="85 15" />
 			</Literal>
 			<Wire Facade="WireInvisibleFacade" Id="23" Joints="N(22:Out)|(190,211) h(5) v(-1) N(15:c2t0v)|(190,210)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="178 226 12 9" DataType="String" Facade="DockedConstantFacade" Id="24" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>/reset_aggregates</p.Data>
+				<p.Data>/reset-aggregates</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 				<DockedConstantFacade UndockedSize="65 15" />
 			</Literal>
@@ -99,12 +99,20 @@
 			<NodeLabel AttachedTo="32" Bounds="59 225 21 14" Id="35" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Tag</p.Text>
 			</NodeLabel>
+			<DataAccessor Bounds="301 205 40 15" DataItem="36" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="39" Bounds="346 205 15 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>url</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<HtmlFrontPanel Height="[float]768" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
 			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="28" Label="[UIModel]29" Left="[float]148" MinHeight="[float]20" MinWidth="[float]20" TabIndex="[int]0" Text="{DataItemBinding Id=26}" Top="[float]100" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="29" LabelOwner="[UIModel]28" Left="[float]148" Text="[string]Server" Top="[float]80" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="33" Label="[UIModel]34" Left="[float]148" MinHeight="[float]20" MinWidth="[float]20" TabIndex="[int]1" Text="{DataItemBinding Id=31}" Top="[float]164" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="34" LabelOwner="[UIModel]33" Left="[float]148" Text="[string]Tag" Top="[float]144" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="37" IsReadOnly="[bool]True" Label="[UIModel]41" Left="[float]324" MinHeight="[float]24" TabIndex="[int]2" Text="{DataItemBinding Id=36}" Top="[float]116" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]360" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="41" LabelOwner="[UIModel]37" Left="[float]324" Text="[string]url" Top="[float]96" Width="[float]14" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="String" Id="26" Name="Server" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>""</p.DefaultValue>
@@ -112,9 +120,12 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="String" Id="31" Name="Tag" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>""</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="36" Name="url" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="37dcd942c98744d39d4b096e215ae07d">
+		<p.TypeReference TypeId="947d6c56ec454f9ca31adc474ee0cee1">
 			<Attributed AttributedType="@c36a7587c369402c99076f34832b1e39">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:HTTP" />
