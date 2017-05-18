@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7FEA12DED40016D918B821691FC3C0C9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CEF06593F84062944C4B642270FDDDCF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -36,27 +36,18 @@
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]56" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="89" IsReadOnly="[bool]True" Label="[UIModel]90" Left="[float]148" MinHeight="[float]24" TabIndex="[int]0" Text="{DataItemBinding Id=79}" Top="[float]148" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="90" LabelOwner="[UIModel]89" Left="[float]148" Text="[string]body" Top="[float]128" Width="[float]27" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]88" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="91" IsReadOnly="[bool]True" Label="[UIModel]92" Left="[float]148" MinHeight="[float]24" TabIndex="[int]1" Text="{DataItemBinding Id=80}" Top="[float]486" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="92" LabelOwner="[UIModel]91" Left="[float]148" Text="[string]body_2" Top="[float]466" Width="[float]39" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]104" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="93" IsReadOnly="[bool]True" Label="[UIModel]94" Left="[float]148" MinHeight="[float]24" TabIndex="[int]2" Text="{DataItemBinding Id=81}" Top="[float]614" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]104" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="93" IsReadOnly="[bool]True" Label="[UIModel]94" Left="[float]148" MinHeight="[float]24" TabIndex="[int]0" Text="{DataItemBinding Id=81}" Top="[float]614" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="94" LabelOwner="[UIModel]93" Left="[float]148" Text="[string]body_3" Top="[float]594" Width="[float]39" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="99" IsReadOnly="[bool]True" Label="[UIModel]100" Left="[float]148" MinHeight="[float]24" TabIndex="[int]3" Text="{DataItemBinding Id=84}" Top="[float]356" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="100" LabelOwner="[UIModel]99" Left="[float]148" Text="[string]publish message url" Top="[float]336" Width="[float]106" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="101" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]concatenated string_2" TabIndex="[int]4" Text="{DataItemBinding Id=85}" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]56" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="102" IsReadOnly="[bool]True" Label="[UIModel]103" Left="[float]148" MinHeight="[float]24" TabIndex="[int]5" Text="{DataItemBinding Id=86}" Top="[float]404" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="103" LabelOwner="[UIModel]102" Left="[float]148" Text="[string]publish body" Top="[float]384" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="101" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]concatenated string_2" TabIndex="[int]1" Text="{DataItemBinding Id=85}" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="220 235 40 15" DataItem="79" Id="15" Label="68" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<UnflattenFromJSON Bounds="240 190 40 40" Id="16" />
-			<PropertyNode Bounds="330 190 68 35" HasErrorTerminals="False" Id="17" InstanceDataType="@bac410ebfb1f456f992bbca344f3ae89" Mode="InstanceProperties">
-				<PropertyItemTerminal DataType="String" Hotspot="68 15" Id="c0t0v" Path="Token" PathElementMemberKinds="Field" Usage="Optional" />
+			<PropertyNode Bounds="330 190 66 35" HasErrorTerminals="False" Id="17" InstanceDataType="@d95c205efaac4d459fe9d94f5a79eeb7" Mode="InstanceProperties">
+				<PropertyItemTerminal DataType="String" Hotspot="66 15" Id="c0t0v" Path="token" PathElementMemberKinds="Field" Usage="Optional" />
 			</PropertyNode>
-			<Wire Id="18" Joints="N(16:value)|(280,195) N(17:instance in)|(330,195)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ConcatenateStrings Bounds="475 150 40 30" Id="19" Terminals="outString=20, c0t0v=37, c1t0v=30, c2t0v=61" VerticalChunkCount="3" />
 			<Wire Id="20" Joints="N(19:outString)|(515,155) h(10) B(1) N(28:Value)|(558,155) B(1) v(30) N(45:L1)|(555,185)" xmlns="http://www.ni.com/PlatformFramework" />
 			<FlattenToJSON Bounds="465 190 40 40" Id="21" />
@@ -80,16 +71,16 @@
 			<DataAccessor Bounds="555 255 40 15" DataItem="85" Id="29" Label="74" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<Wire Id="30" Joints="N(17:c0t0v)|(398,205) h(32) B(1) v(-40) N(19:c1t0v)|(475,165) B(1) v(40) N(25:c1t0v)|(465,245)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="30" Joints="N(17:c0t0v)|(396,205) h(34) B(1) v(-40) N(19:c1t0v)|(475,165) B(1) v(40) N(25:c1t0v)|(465,245)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="555 235 40 15" DataItem="86" Id="31" Label="75" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<Wire Id="32" Joints="N(26:Value)|(290,125) N(35:c0t0v)|(325,125)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="33" Joints="N(27:Value)|(285,165) h(15) v(-25) N(35:c1t0v)|(325,140)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="34" Joints="N(35:instance out)|(413,115) h(37) v(80) N(21:anything)|(465,195)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PropertyNode Bounds="325 110 88 50" HasErrorTerminals="False" Id="35" InstanceDataType="@406456fb5fe74dfdb356335b4fce394e" Mode="InstanceProperties">
-				<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 15" Id="c0t0v" Path="Topic" PathElementMemberKinds="Field" Usage="Required" />
-				<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 30" Id="c1t0v" Path="Message" PathElementMemberKinds="Field" Usage="Required" />
+			<Wire Id="34" Joints="N(35:instance out)|(414,115) h(36) v(80) N(21:anything)|(465,195)" xmlns="http://www.ni.com/PlatformFramework" />
+			<PropertyNode Bounds="325 110 89 50" HasErrorTerminals="False" Id="35" InstanceDataType="@f8212168627e4e089d2746a1de22225e" Mode="InstanceProperties">
+				<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 15" Id="c0t0v" Path="topic" PathElementMemberKinds="Field" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 30" Id="c1t0v" Path="message" PathElementMemberKinds="Field" Usage="Required" />
 			</PropertyNode>
 			<Wire Id="37" Joints="N(44:outString)|(110,180) h(10) B(1) h(300) B(2) h(20) v(55) N(25:c0t0v)|(465,235) B(2) v(-25) N(19:c0t0v)|(475,155) B(1) v(50) N(52:L1)|(145,230)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="10 185 40 15" DataItem="88" Id="38" Label="77" xmlns="http://www.ni.com/MocCommon">
@@ -101,8 +92,8 @@
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="41" Joints="N(40:Out)|(50,170) h(10) v(10) N(44:c0t0v)|(70,180)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="-95 205 145 15" DataType="String" Facade="String" Id="42" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>/nimessage/sessions/</p.Data>
+			<Literal Bounds="-115 205 165 15" DataType="String" Facade="String" Id="42" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>/nimessage/v1/sessions/</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="43" Joints="N(42:Out)|(50,210) h(10) v(-10) N(44:c2t0v)|(70,200)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -197,7 +188,7 @@
 			<Wire Id="53" Joints="N(52:R0)|(185,220) h(15) v(-130) h(335) v(85) N(45:L0)|(555,175)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="54" Joints="N(52:R3)|(185,250) h(340) v(-45) N(45:L3)|(555,205)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="55" Joints="N(52:R2)|(185,240) h(25) B(1) N(15:Value)|(223,240) B(1) v(-45) N(16:JSON string)|(240,195)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ClusterLiteral Bounds="228 200 12 9" DataType="@bac410ebfb1f456f992bbca344f3ae89" Facade="DockedConstantFacade" Id="56" xmlns="http://www.ni.com/MocCommon">
+			<ClusterLiteral Bounds="228 200 12 9" DataType="@d95c205efaac4d459fe9d94f5a79eeb7" Facade="DockedConstantFacade" Id="56" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>
 					<Cluster>
 						<Field1>""</Field1>
@@ -208,19 +199,19 @@
 					<p.Data>""</p.Data>
 					<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 				</Literal>
-				<NodeLabel AttachedTo="57" Bounds="15 3 34 14" Id="58" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Token</p.Text>
+				<NodeLabel AttachedTo="57" Bounds="15 3 32 14" Id="58" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>token</p.Text>
 				</NodeLabel>
 				<DockedConstantFacade UndockedSize="80 50" />
 			</ClusterLiteral>
-			<Wire Facade="WireInvisibleFacade" Id="59" Joints="N(56:Out)|(240,205) N(16:type and defaults)|(240,205)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Facade="WireInvisibleFacade" Id="59" Joints="N(56:Out)|(308,205) v(-25) h(-78) v(25) N(16:type and defaults)|(240,205)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="463 170 12 9" DataType="String" Facade="DockedConstantFacade" Id="60" Label="78" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>/messages</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 				<DockedConstantFacade LabelPosition="Bottom" UndockedSize="85 15" />
 			</Literal>
 			<Wire Facade="WireInvisibleFacade" Id="61" Joints="N(60:Out)|(475,175) N(19:c2t0v)|(475,175)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-			<ClusterLiteral Bounds="313 110 12 9" DataType="@406456fb5fe74dfdb356335b4fce394e" Facade="DockedConstantFacade" Id="62" xmlns="http://www.ni.com/MocCommon">
+			<ClusterLiteral Bounds="313 110 12 9" DataType="@f8212168627e4e089d2746a1de22225e" Facade="DockedConstantFacade" Id="62" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>
 					<Cluster>
 						<Field1>""</Field1>
@@ -232,24 +223,24 @@
 					<p.Data>""</p.Data>
 					<StringBehavior TextDisplayMode="Default" />
 				</Literal>
-				<NodeLabel AttachedTo="63" Bounds="15 -2 30 14" Id="64" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Topic</p.Text>
+				<NodeLabel AttachedTo="63" Bounds="15 -2 27 14" Id="64" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>topic</p.Text>
 				</NodeLabel>
 				<Literal Bounds="15 55 40 15" DataType="String" Facade="String" Id="65" Label="66">
 					<p.Data>""</p.Data>
 					<StringBehavior TextDisplayMode="Default" />
 				</Literal>
-				<NodeLabel AttachedTo="65" Bounds="15 38 48 14" Id="66" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Message</p.Text>
+				<NodeLabel AttachedTo="65" Bounds="15 38 49 14" Id="66" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>message</p.Text>
 				</NodeLabel>
 				<DockedConstantFacade UndockedSize="100 100" />
 			</ClusterLiteral>
-			<Wire Facade="WireInvisibleFacade" Id="67" Joints="N(62:Out)|(325,115) N(35:instance in)|(325,115)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Facade="WireInvisibleFacade" Id="67" Joints="N(62:Out)|(413,115) v(9) h(-93) v(-9) N(35:instance in)|(325,115)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<NodeLabel AttachedTo="15" Bounds="265 235 27 14" Id="68" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>body</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="23" Bounds="670 215 41 14" Id="69" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>body_2</p.Text>
+			<NodeLabel AttachedTo="23" Bounds="670 215 81 14" Id="69" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>response body</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="24" Bounds="755 190 41 14" Id="70" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>body_3</p.Text>
@@ -275,6 +266,7 @@
 			<NodeLabel AttachedTo="60" Bounds="463 182 30 15" Id="78" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>string 4</p.Text>
 			</NodeLabel>
+			<Wire Id="108" Joints="N(16:value)|(280,195) N(17:instance in)|(330,195)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<HtmlFrontPanel Height="[float]768" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
 			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="106" IsReadOnly="[bool]False" Label="[UIModel]107" Left="[float]116" MinHeight="[float]24" TabIndex="[int]0" Text="{DataItemBinding Id=88}" Top="[float]36" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]184" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -283,11 +275,19 @@
 			<HtmlLabel Height="[float]16" Id="96" LabelOwner="[UIModel]95" Left="[float]116" Text="[string]Topic" Top="[float]64" Width="[float]29" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="97" IsReadOnly="[bool]False" Label="[UIModel]98" Left="[float]116" MinHeight="[float]24" TabIndex="[int]2" Text="{DataItemBinding Id=83}" Top="[float]132" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]184" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="98" LabelOwner="[UIModel]97" Left="[float]116" Text="[string]Message" Top="[float]112" Width="[float]47" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]56" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="89" IsReadOnly="[bool]True" Label="[UIModel]90" Left="[float]116" MinHeight="[float]24" TabIndex="[int]3" Text="{DataItemBinding Id=79}" Top="[float]212" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="90" LabelOwner="[UIModel]89" Left="[float]116" Text="[string]body" Top="[float]192" Width="[float]27" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="99" IsReadOnly="[bool]True" Label="[UIModel]100" Left="[float]116" MinHeight="[float]24" TabIndex="[int]4" Text="{DataItemBinding Id=84}" Top="[float]292" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="100" LabelOwner="[UIModel]99" Left="[float]116" Text="[string]publish message url" Top="[float]272" Width="[float]106" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]56" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="102" IsReadOnly="[bool]True" Label="[UIModel]103" Left="[float]116" MinHeight="[float]24" TabIndex="[int]5" Text="{DataItemBinding Id=86}" Top="[float]356" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="103" LabelOwner="[UIModel]102" Left="[float]116" Text="[string]publish body" Top="[float]336" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]88" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="91" IsReadOnly="[bool]True" Label="[UIModel]92" Left="[float]116" MinHeight="[float]24" TabIndex="[int]6" Text="{DataItemBinding Id=80}" Top="[float]436" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]552" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="92" LabelOwner="[UIModel]91" Left="[float]116" Text="[string]response body" Top="[float]416" Width="[float]79" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="String" Id="79" Name="body" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>""</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="String" Id="80" Name="body_2" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="80" Name="response body" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>""</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="String" Id="81" Name="body_3" xmlns="http://www.ni.com/MocCommon">
@@ -313,18 +313,18 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="bac410ebfb1f456f992bbca344f3ae89">
+		<p.TypeReference TypeId="d95c205efaac4d459fe9d94f5a79eeb7">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Token" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="token" DataType="String" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="406456fb5fe74dfdb356335b4fce394e">
+		<p.TypeReference TypeId="f8212168627e4e089d2746a1de22225e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Topic" DataType="String" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Message" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="topic" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="message" DataType="String" />
 				</Members>
 			</Composite>
 		</p.TypeReference>

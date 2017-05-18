@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8E0307863B74BC7C74AE5D6E7CEDFAB3" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C853E9380B252327DA83E1DC124D6AEE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2805" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -507,8 +507,8 @@
 				<CaseStructure.Tunnel Bounds="166 310 13 10" Docking="Right" Id="1665" Terminals="1486=559, 1487=1676, 1488=1664" />
 				<CaseStructure.Tunnel Bounds="166 50 13 10" Docking="Right" Id="1668" Terminals="1486=1085, 1487=1674, 1488=1667" />
 			</CaseStructure>
-			<Literal Bounds="-429 -40 25 15" DataType="Boolean" Facade="False Constant" Id="1670" Label="1671" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>False</p.Data>
+			<Literal Bounds="-429 -40 25 15" DataType="Boolean" Facade="True Constant" Id="1670" Label="1671" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
 				<BooleanBehavior />
 			</Literal>
 			<NodeLabel AttachedTo="1670" Bounds="-429 -58 30 15" Id="1671" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
