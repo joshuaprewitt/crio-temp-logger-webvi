@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="46DDEBA1AB9A30707F5DE485F0F083A3" Timestamp="1D3242244B8A0CE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EC24D10D04E9AC52AC75C96C0657C36D" Timestamp="1D32423BDEC8B38" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
 		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.8" Version="5.2.0.8" />
@@ -770,7 +770,7 @@
 			</MethodCall>
 			<Wire Id="376" Joints="N(256:R0)|(-430,140) h(65) B(1) N(411:o0)|(-349,140) B(1) v(-120) N(517:o0)|(-349,20) B(1) v(290) N(377:o0)|(-349,430)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-580 135 40 15" DataType="String" Id="364" Label="366" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>/</p.Data>
+				<p.Data>""</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Literal Bounds="-520 450 145 15" DataType="String" Id="365" Label="367" xmlns="http://www.ni.com/MocCommon">
