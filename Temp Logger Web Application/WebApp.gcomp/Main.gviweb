@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="EC24D10D04E9AC52AC75C96C0657C36D" Timestamp="1D32423BDEC8B38" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="51DE2C274A59C2742BDDFB8E72A8D75B" Timestamp="1D324251CB08284" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
 		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.8" Version="5.2.0.8" />
@@ -702,9 +702,9 @@
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="NI:Skyline:TagHTTP:Aggregates\ Double\.gtype" />
 								</p.TypeDefinitionTargets>
-								<PropertyItemTerminal DataType="Double" Hotspot="64 15" Id="c0t0v" Path="Min" PathElementMemberKinds="Field" Usage="Optional" />
+								<PropertyItemTerminal DataType="Double" Hotspot="64 15" Id="c0t0v" Path="Max" PathElementMemberKinds="Field" Usage="Optional" />
 								<PropertyItemTerminal DataType="Double" Hotspot="64 30" Id="c1t0v" Path="Mean" PathElementMemberKinds="Field" Usage="Optional" />
-								<PropertyItemTerminal DataType="Double" Hotspot="64 45" Id="c2t0v" Path="Max" PathElementMemberKinds="Field" Usage="Optional" />
+								<PropertyItemTerminal DataType="Double" Hotspot="64 45" Id="c2t0v" Path="Min" PathElementMemberKinds="Field" Usage="Optional" />
 							</PropertyNode>
 							<Wire Id="395" Joints="N(379:T1)|(230,40) v(-10) N(394:instance in)|(335,30)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="396" Joints="N(394:c0t0v)|(399,40) N(165:c1t0v)|(420,40)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -829,13 +829,13 @@
 				<HtmlPlot HorizontalScale="[UIModel]491" Id="493" Label="[string]Channel 0" VerticalScale="[UIModel]492">
 					<HtmlPlotRenderer Id="496" LineStroke="[SMSolidColorBrush]#ff82a3d1" LineThickness="[double]1" />
 				</HtmlPlot>
-				<HtmlPlot HorizontalScale="[UIModel]491" Id="504" Label="[string]Minimum" VerticalScale="[UIModel]492">
+				<HtmlPlot HorizontalScale="[UIModel]491" Id="504" Label="[string]Maximum" VerticalScale="[UIModel]492">
 					<HtmlPlotRenderer Id="505" LineStroke="[SMSolidColorBrush]#ff008ee4" />
 				</HtmlPlot>
 				<HtmlPlot HorizontalScale="[UIModel]491" Id="506" Label="[string]Average" VerticalScale="[UIModel]492">
 					<HtmlPlotRenderer Id="507" LineStroke="[SMSolidColorBrush]#ffe2b683" />
 				</HtmlPlot>
-				<HtmlPlot HorizontalScale="[UIModel]491" Id="508" Label="[string]Maximum" VerticalScale="[UIModel]492">
+				<HtmlPlot HorizontalScale="[UIModel]491" Id="508" Label="[string]Minimum" VerticalScale="[UIModel]492">
 					<HtmlPlotRenderer Id="509" LineStroke="[SMSolidColorBrush]#ffb7ac1f" />
 				</HtmlPlot>
 			</HtmlChart>
