@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="51DE2C274A59C2742BDDFB8E72A8D75B" Timestamp="1D324263B1C56DB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="10C51C56803D4F5BA7E33817092EEA89" Timestamp="1D36FBE7692BAAB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.8" Version="5.2.0.8" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.0" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.0" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5822" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.8" Version="5.2.0.8" />
-		<ApplicationVersionInfo Build="5.2.0.5822" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -88,60 +88,59 @@
 							<p.Data>send_file</p.Data>
 							<StringBehavior TextDisplayMode="Default" />
 						</Literal>
-						<Wire Id="64" Joints="N(62:Out)|(165,130) h(10) v(-15) B(2) N(511:L3)|(185,115) B(2) v(-10) N(511:L2)|(185,105)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="45 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="510" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\messageHTTP-src\\17.2.0\\MessageHTTP.gcomp\\Open.gvi&quot;" Target="NI:Skyline:MessageHTTP:Open\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<Wire Id="64" Joints="N(62:Out)|(165,130) h(10) v(-25) B(2) N(511:L2)|(185,105) B(2) v(-10) N(511:L1)|(185,95)" xmlns="http://www.ni.com/PlatformFramework" />
+						<MethodCall Bounds="45 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="510" ResolveFailedHint="Open.gvi, Package: (NI Skyline Message support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:MessageHTTP:Open\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-									<Parameter Id="L0" Desc="configuration" />
-									<Parameter Id="L1" Desc="error in" />
+									<Parameter Id="L3" Desc="error in" />
+									<Parameter Id="T0" Desc="configuration" />
 									<Parameter Id="R0" Desc="message session out" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@cfe0110e1a7e47bca89317e280d652bb" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@c571a2f2aa154764ba3f71aa199b85f0" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@b31c8e8a63d44561a129b90cb43d7f27" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<MethodCall Bounds="185 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="511" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\messageHTTP-src\\17.2.0\\MessageHTTP.gcomp\\Publish.gvi&quot;" Target="NI:Skyline:MessageHTTP:Publish\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="185 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="511" ResolveFailedHint="Publish.gvi, Package: (NI Skyline Message support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:MessageHTTP:Publish\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="message session" />
-									<Parameter Id="L1" Desc="error in" />
-									<Parameter Id="L2" Desc="topic" />
-									<Parameter Id="L3" Desc="message" />
+									<Parameter Id="L1" Desc="topic" />
+									<Parameter Id="L2" Desc="message" />
+									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="R0" Desc="message session out" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@c571a2f2aa154764ba3f71aa199b85f0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@b31c8e8a63d44561a129b90cb43d7f27" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="String" Direction="Input" Hotspot="0 35" Id="L3" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@c571a2f2aa154764ba3f71aa199b85f0" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@b31c8e8a63d44561a129b90cb43d7f27" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<Wire Id="513" Joints="N(510:R0)|(85,85) N(511:L0)|(185,85)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="514" Joints="N(515:41)|(4,85) N(510:L0)|(45,85)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="250 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="524" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\messageHTTP-src\\17.2.0\\MessageHTTP.gcomp\\Close.gvi&quot;" Target="NI:Skyline:MessageHTTP:Close\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="250 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="524" ResolveFailedHint="Close.gvi, Package: (NI Skyline Message support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:MessageHTTP:Close\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="message session" />
-									<Parameter Id="L1" Desc="error in" />
+									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="R0" Desc="configuration" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@c571a2f2aa154764ba3f71aa199b85f0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@a21d92f9f2dd418b9a657c979b61e7ef" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@b31c8e8a63d44561a129b90cb43d7f27" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<Wire Id="525" Joints="N(511:R0)|(225,85) N(524:L0)|(250,85)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="526" Joints="N(511:R1)|(225,95) N(524:L1)|(250,95)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="528" Joints="N(515:41)|(4,85) h(5) v(-10) h(51) N(510:T0)|(60,80)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="529" Joints="N(510:R0)|(85,85) N(511:L0)|(185,85)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="42" Terminals="25=29, 40, 41" />
-					<CaseStructure.Tunnel Bounds="-4 85 13 10" Docking="Left" Id="515" Terminals="25=516, 40, 41=514" />
+					<CaseStructure.Tunnel Bounds="-4 85 13 10" Docking="Left" Id="515" Terminals="25=516, 40, 41=528" />
 				</CaseStructure>
 				<DataAccessor Bounds="135 60 40 15" DataItem="203" Id="26" Label="27" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -211,40 +210,39 @@
 						<NodeLabel AttachedTo="248" Bounds="45 83 30 15" Id="250" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>string 3</p.Text>
 						</NodeLabel>
-						<MethodCall Bounds="185 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="403" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="185 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="403" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="path" />
-									<Parameter Id="L1" Desc="error in" />
-									<Parameter Id="L2" Desc="data type" />
+									<Parameter Id="L1" Desc="data type" />
+									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="T0" Desc="configuration" />
 									<Parameter Id="R0" Desc="tag out" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
 							<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<MethodCall Bounds="255 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="404" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Reset Aggregates (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Reset\ Aggregates\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="255 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="404" ResolveFailedHint="Reset Aggregates (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Reset\ Aggregates\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="tag in" />
-									<Parameter Id="L1" Desc="error in" />
+									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="R0" Desc="tag out" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<Wire Id="405" Joints="N(403:R0)|(225,60) N(404:L0)|(255,60)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="406" Joints="N(403:R1)|(225,70) N(404:L1)|(255,70)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="408" Joints="N(409:46)|(4,35) h(196) N(403:T0)|(200,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Literal Bounds="60 80 100 15" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Id="413" Label="414" p7:ControlDefinitionChecksum="ToGWfb3K6X96578p5R+gsw==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>0</p.Data>
@@ -257,21 +255,22 @@
 						<NodeLabel AttachedTo="413" Bounds="60 98 30 15" Id="414" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>data type</p.Text>
 						</NodeLabel>
-						<Wire Id="415" Joints="N(413:Out)|(160,85) h(15) v(-5) N(403:L2)|(185,80)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="325 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="416" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="325 55 40 40" DomainName="NI:Skyline:TagHTTP" Id="416" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="tag" />
-									<Parameter Id="L1" Desc="error in" />
-									<Parameter Id="R1" Desc="error out" />
+									<Parameter Id="L3" Desc="error in" />
+									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<Wire Id="417" Joints="N(404:R0)|(295,60) N(416:L0)|(325,60)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="418" Joints="N(404:R1)|(295,70) N(416:L1)|(325,70)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="531" Joints="N(413:Out)|(160,85) h(18) v(-15) N(403:L1)|(185,70)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="546" Joints="N(403:R3)|(225,90) N(404:L3)|(255,90)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="547" Joints="N(404:R3)|(295,90) N(416:L3)|(325,90)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="47" Terminals="34=37, 45, 46" />
 					<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="49" Terminals="34=38, 45, 46=81" />
@@ -317,7 +316,7 @@
 					<ArrayBehavior ElementType="String" IndexEditorWidth="42" VisibleRows="5">
 						<p.DefaultElementValue>""</p.DefaultElementValue>
 					</ArrayBehavior>
-					<Literal Bounds="49 84 195 18" DataType="String" Id="110">
+					<Literal Bounds="49 44 195 18" DataType="String" Id="110">
 						<StringBehavior TextDisplayMode="Default" />
 					</Literal>
 				</ArrayLiteral>
@@ -332,7 +331,7 @@
 					</Literal>
 					<Wire Facade="WireInvisibleFacade" Id="120" Joints="N(119:Out)|(75,105) N(117:c1t0v)|(75,105)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="121" Joints="N(113:i0)|(6,115) N(117:c2t0v)|(75,115)" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="195 45 590 115" DataType="Int32" Default="126" Id="122" Selected="130" UserSelectorBounds="238 0 115 17">
+					<CaseStructure Bounds="195 45 590 115" DataType="Int32" Default="126" Id="122" Selected="126" UserSelectorBounds="238 0 115 17">
 						<CaseStructure.Case Bounds="5 5 580 105" Id="126" Pattern="0, Default">
 							<DataAccessor Bounds="335 60 40 15" DataItem="207" Id="134" Label="135" xmlns="http://www.ni.com/MocCommon">
 								<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -340,23 +339,23 @@
 							<NodeLabel AttachedTo="134" Bounds="380 60 62 14" Id="135" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Disk Usage</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="421" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="421" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="path" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="L2" Desc="data type" />
+										<Parameter Id="L1" Desc="data type" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="T0" Desc="configuration" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Literal Bounds="25 60 100 15" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Id="422" Label="425" p8:ControlDefinitionChecksum="ToGWfb3K6X96578p5R+gsw==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>0</p.Data>
@@ -366,18 +365,17 @@
 								</p8:p.TypeDefinitionTargets>
 								<EnumBehavior />
 							</Literal>
-							<Wire Id="423" Joints="N(422:Out)|(125,65) N(421:L2)|(145,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="424" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="424" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="L3" Desc="error in" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<NodeLabel AttachedTo="422" Bounds="25 78 30 15" Id="425" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>data type</p.Text>
@@ -386,29 +384,30 @@
 							<Wire Id="427" Joints="N(133:126)|(4,20) h(156) N(421:T0)|(160,40)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="428" Joints="N(421:R0)|(185,45) N(483:L0)|(205,45)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="429" Joints="N(483:R0)|(245,45) h(10) v(-20) N(424:L0)|(275,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="430" Joints="N(421:R1)|(185,55) N(483:L1)|(205,55)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="431" Joints="N(483:R1)|(245,55) h(20) v(-20) N(424:L1)|(275,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="432" Joints="N(483:R2)|(245,65) N(134:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="483" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Read Tag (DBL).gvi&quot;" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="483" ResolveFailedHint="Read Tag (DBL).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag in" />
-										<Parameter Id="L1" Desc="error in" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
-										<Parameter Id="R2" Desc="value" />
-										<Parameter Id="R3" Desc="time stamp" />
+										<Parameter Id="R1" Desc="value" />
+										<Parameter Id="R2" Desc="time stamp" />
+										<Parameter Id="R3" Desc="error out" />
 										<Parameter Id="T1" Desc="aggregates" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@266278c007dd415787dc3d85cdaa10ac" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
+							<Wire Id="533" Joints="N(422:Out)|(125,65) h(5) v(-10) N(421:L1)|(145,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="542" Joints="N(483:R1)|(245,55) h(10) v(10) N(134:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="551" Joints="N(421:R3)|(185,75) N(483:L3)|(205,75)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="552" Joints="N(483:R3)|(245,75) h(25) v(-20) N(424:L3)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 580 105" Id="127" Pattern="1">
 							<DataAccessor Bounds="335 60 40 15" DataItem="208" Id="140" Label="141" xmlns="http://www.ni.com/MocCommon">
@@ -417,23 +416,23 @@
 							<NodeLabel AttachedTo="140" Bounds="380 60 83 14" Id="141" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Memory Usage</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="435" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="435" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="path" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="L2" Desc="data type" />
+										<Parameter Id="L1" Desc="data type" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="T0" Desc="configuration" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Literal Bounds="25 60 100 15" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Id="436" Label="439" p8:ControlDefinitionChecksum="ToGWfb3K6X96578p5R+gsw==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>0</p.Data>
@@ -443,18 +442,17 @@
 								</p8:p.TypeDefinitionTargets>
 								<EnumBehavior />
 							</Literal>
-							<Wire Id="437" Joints="N(436:Out)|(125,65) N(435:L2)|(145,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="438" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="438" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="L3" Desc="error in" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<NodeLabel AttachedTo="436" Bounds="25 78 30 15" Id="439" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>data type</p.Text>
@@ -463,29 +461,30 @@
 							<Wire Id="441" Joints="N(133:127)|(4,20) h(156) N(435:T0)|(160,40)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="442" Joints="N(435:R0)|(185,45) N(484:L0)|(205,45)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="444" Joints="N(484:R0)|(245,45) h(10) v(-20) N(438:L0)|(275,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="445" Joints="N(484:R1)|(245,55) h(20) v(-20) N(438:L1)|(275,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="446" Joints="N(435:R1)|(185,55) N(484:L1)|(205,55)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="447" Joints="N(484:R2)|(245,65) N(140:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="484" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Read Tag (DBL).gvi&quot;" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="484" ResolveFailedHint="Read Tag (DBL).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag in" />
-										<Parameter Id="L1" Desc="error in" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
-										<Parameter Id="R2" Desc="value" />
-										<Parameter Id="R3" Desc="time stamp" />
+										<Parameter Id="R1" Desc="value" />
+										<Parameter Id="R2" Desc="time stamp" />
+										<Parameter Id="R3" Desc="error out" />
 										<Parameter Id="T1" Desc="aggregates" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@266278c007dd415787dc3d85cdaa10ac" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
+							<Wire Id="534" Joints="N(436:Out)|(125,65) h(5) v(-10) N(435:L1)|(145,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="543" Joints="N(484:R1)|(245,55) h(10) v(10) N(140:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="553" Joints="N(435:R3)|(185,75) N(484:L3)|(205,75)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="554" Joints="N(484:R3)|(245,75) h(25) v(-20) N(438:L3)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 580 105" Id="128" Pattern="2">
 							<DataAccessor Bounds="335 60 40 15" DataItem="209" Id="146" Label="147" xmlns="http://www.ni.com/MocCommon">
@@ -494,23 +493,23 @@
 							<NodeLabel AttachedTo="146" Bounds="380 60 54 14" Id="147" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Files Sent</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="450" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="450" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="path" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="L2" Desc="data type" />
+										<Parameter Id="L1" Desc="data type" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="T0" Desc="configuration" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Literal Bounds="25 60 100 15" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Id="451" Label="454" p8:ControlDefinitionChecksum="ToGWfb3K6X96578p5R+gsw==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>1</p.Data>
@@ -520,18 +519,17 @@
 								</p8:p.TypeDefinitionTargets>
 								<EnumBehavior />
 							</Literal>
-							<Wire Id="452" Joints="N(451:Out)|(125,65) N(450:L2)|(145,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="453" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="453" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="L3" Desc="error in" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<NodeLabel AttachedTo="451" Bounds="25 42 30 15" Id="454" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>data type</p.Text>
@@ -540,29 +538,30 @@
 							<Wire Id="456" Joints="N(132:128)|(4,45) N(450:L0)|(145,45)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="457" Joints="N(450:R0)|(185,45) N(485:L0)|(205,45)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="458" Joints="N(485:R0)|(245,45) h(10) v(-20) N(453:L0)|(275,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="459" Joints="N(450:R1)|(185,55) N(485:L1)|(205,55)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="460" Joints="N(485:R1)|(245,55) h(20) v(-20) N(453:L1)|(275,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="461" Joints="N(485:R2)|(245,65) N(146:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="485" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Read Tag (I32).gvi&quot;" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(I32\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="485" ResolveFailedHint="Read Tag (I32).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(I32\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag in" />
-										<Parameter Id="L1" Desc="error in" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
-										<Parameter Id="R2" Desc="value" />
-										<Parameter Id="R3" Desc="time stamp" />
+										<Parameter Id="R1" Desc="value" />
+										<Parameter Id="R2" Desc="time stamp" />
+										<Parameter Id="R3" Desc="error out" />
 										<Parameter Id="T1" Desc="aggregates" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@ae0c21183db94fb5baaf64792d49143a" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
+							<Wire Id="535" Joints="N(451:Out)|(125,65) h(5) v(-10) N(450:L1)|(145,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="544" Joints="N(485:R1)|(245,55) h(10) v(10) N(146:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="555" Joints="N(450:R3)|(185,75) N(485:L3)|(205,75)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="556" Joints="N(485:R3)|(245,75) h(25) v(-20) N(453:L3)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 580 105" Id="129" Pattern="3">
 							<DataAccessor Bounds="335 60 40 15" DataItem="210" Id="154" Label="155" xmlns="http://www.ni.com/MocCommon">
@@ -571,23 +570,23 @@
 							<NodeLabel AttachedTo="154" Bounds="380 60 34 14" Id="155" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Buffer</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="464" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="464" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="path" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="L2" Desc="data type" />
+										<Parameter Id="L1" Desc="data type" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="T0" Desc="configuration" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Literal Bounds="25 60 100 15" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Id="465" Label="468" p8:ControlDefinitionChecksum="ToGWfb3K6X96578p5R+gsw==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>1</p.Data>
@@ -597,18 +596,17 @@
 								</p8:p.TypeDefinitionTargets>
 								<EnumBehavior />
 							</Literal>
-							<Wire Id="466" Joints="N(465:Out)|(125,65) N(464:L2)|(145,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="467" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="275 20 40 40" DomainName="NI:Skyline:TagHTTP" Id="467" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="L3" Desc="error in" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<NodeLabel AttachedTo="465" Bounds="25 78 30 15" Id="468" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>data type</p.Text>
@@ -617,69 +615,70 @@
 							<Wire Id="470" Joints="N(133:129)|(4,20) h(156) N(464:T0)|(160,40)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="471" Joints="N(464:R0)|(185,45) N(486:L0)|(205,45)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="472" Joints="N(486:R0)|(245,45) h(10) v(-20) N(467:L0)|(275,25)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="473" Joints="N(464:R1)|(185,55) N(486:L1)|(205,55)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="474" Joints="N(486:R1)|(245,55) h(20) v(-20) N(467:L1)|(275,35)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="475" Joints="N(486:R2)|(245,65) N(154:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="486" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Read Tag (I32).gvi&quot;" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(I32\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="486" ResolveFailedHint="Read Tag (I32).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(I32\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag in" />
-										<Parameter Id="L1" Desc="error in" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
-										<Parameter Id="R2" Desc="value" />
-										<Parameter Id="R3" Desc="time stamp" />
+										<Parameter Id="R1" Desc="value" />
+										<Parameter Id="R2" Desc="time stamp" />
+										<Parameter Id="R3" Desc="error out" />
 										<Parameter Id="T1" Desc="aggregates" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@ae0c21183db94fb5baaf64792d49143a" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
+							<Wire Id="536" Joints="N(465:Out)|(125,65) h(5) v(-10) N(464:L1)|(145,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="537" Joints="N(486:R1)|(245,55) h(10) v(10) N(154:Value)|(338,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="545" Joints="N(464:R3)|(185,75) N(486:L3)|(205,75)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="548" Joints="N(486:R3)|(245,75) h(25) v(-20) N(467:L3)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 580 105" Id="130" Pattern="4">
-							<BuildCluster Bounds="420 25 40 40" Id="165" Terminals="outCluster=399, c0t0v=389, c1t0v=396, c2t0v=397, c3t0v=398" VerticalChunkCount="4" />
-							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="379" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Read Tag (DBL).gvi&quot;" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<BuildCluster Bounds="420 25 40 40" Id="165" Terminals="outCluster=541, c0t0v=539, c1t0v=396, c2t0v=397, c3t0v=398" VerticalChunkCount="4" />
+							<MethodCall Bounds="205 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="379" ResolveFailedHint="Read Tag (DBL).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Read\ Tag\ \(DBL\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag in" />
-										<Parameter Id="L1" Desc="error in" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
-										<Parameter Id="R2" Desc="value" />
-										<Parameter Id="R3" Desc="time stamp" />
+										<Parameter Id="R1" Desc="value" />
+										<Parameter Id="R2" Desc="time stamp" />
+										<Parameter Id="R3" Desc="error out" />
 										<Parameter Id="T1" Desc="aggregates" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@266278c007dd415787dc3d85cdaa10ac" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
-							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="378" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Open Tag.gvi&quot;" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="145 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="378" ResolveFailedHint="Open Tag.gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Open\ Tag\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="path" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="L2" Desc="data type" />
+										<Parameter Id="L1" Desc="data type" />
+										<Parameter Id="L3" Desc="error in" />
 										<Parameter Id="T0" Desc="configuration" />
 										<Parameter Id="R0" Desc="tag out" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@21b3849648ba4fa9b3bafb76b7cbe655" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Wire Id="382" Joints="N(133:130)|(4,20) h(156) N(378:T0)|(160,40)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="383" Joints="N(132:130)|(4,45) N(378:L0)|(145,45)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -694,10 +693,7 @@
 							<NodeLabel AttachedTo="384" Bounds="25 78 30 15" Id="385" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>data type</p.Text>
 							</NodeLabel>
-							<Wire Id="386" Joints="N(384:Out)|(125,65) N(378:L2)|(145,65)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="387" Joints="N(378:R0)|(185,45) N(379:L0)|(205,45)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="388" Joints="N(378:R1)|(185,55) N(379:L1)|(205,55)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="389" Joints="N(379:R2)|(245,65) h(10) v(-50) h(150) v(15) N(165:c0t0v)|(420,30)" xmlns="http://www.ni.com/PlatformFramework" />
 							<PropertyNode Bounds="335 25 64 65" HasErrorTerminals="False" Id="394" InstanceDataType="@266278c007dd415787dc3d85cdaa10ac" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="NI:Skyline:TagHTTP:Aggregates\ Double\.gtype" />
@@ -710,27 +706,30 @@
 							<Wire Id="396" Joints="N(394:c0t0v)|(399,40) N(165:c1t0v)|(420,40)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="397" Joints="N(394:c1t0v)|(399,55) h(6) v(-5) N(165:c2t0v)|(420,50)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="398" Joints="N(394:c2t0v)|(399,70) h(6) v(-10) N(165:c3t0v)|(420,60)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="399" Joints="N(165:outCluster)|(460,30) N(489:Value)|(493,30)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="275 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="400" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Close Tag (Single).gvi&quot;" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="275 40 40 40" DomainName="NI:Skyline:TagHTTP" Id="400" ResolveFailedHint="Close Tag (Single).gvi, Package: (NI Skyline Tag support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:TagHTTP:Close\ Tag\ \(Single\)\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="tag" />
-										<Parameter Id="L1" Desc="error in" />
-										<Parameter Id="R1" Desc="error out" />
+										<Parameter Id="L3" Desc="error in" />
+										<Parameter Id="R3" Desc="error out" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
-								<Terminal DataType="@00caea145cdc4facb78827ec5b9ff6d7" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 							<Wire Id="401" Joints="N(379:R0)|(245,45) N(400:L0)|(275,45)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="402" Joints="N(379:R1)|(245,55) N(400:L1)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
 							<DataAccessor Bounds="490 25 40 15" DataItem="488" Id="489" Label="502" xmlns="http://www.ni.com/MocCommon">
 								<Terminal DataType="@6795b2ab0f664f0d959c3a64e7fa34be" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 							</DataAccessor>
 							<NodeLabel AttachedTo="489" Bounds="535 25 31 14" Id="502" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Chart</p.Text>
 							</NodeLabel>
+							<Wire Id="532" Joints="N(384:Out)|(125,65) h(5) v(-10) N(378:L1)|(145,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="539" Joints="N(379:R1)|(245,55) h(10) v(-40) h(150) v(15) N(165:c0t0v)|(420,30)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="541" Joints="N(165:outCluster)|(460,30) N(489:Value)|(493,30)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="549" Joints="N(378:R3)|(185,75) N(379:L3)|(205,75)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="550" Joints="N(379:R3)|(245,75) N(400:L3)|(275,75)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 60 13 10" Docking="Left" Id="131" Terminals="122=123, 126, 127, 128, 129, 130" />
 						<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="132" Terminals="122=125, 126=426, 127=440, 128=456, 129=469, 130=383" />
@@ -750,76 +749,76 @@
 				<LoopTunnel Bounds="-4 125 13 10" Docking="Left" Id="96" Terminals="o0=369, i0=109" />
 				<LoopTunnel Bounds="-4 100 13 10" Docking="Left" Id="377" Terminals="o0=376, i0=381" />
 			</WhileLoop>
-			<MethodCall Bounds="-470 135 40 40" DomainName="NI:Skyline:TagHTTP" Id="256" ResolveFailedHint="&quot;C:\\Program Files\\National Instruments\\LabVIEW NXG 2.0\\Addons\\NI\\Skyline\\taghttp-src\\17.2.0\\TagHTTP.gcomp\\Create Configuration.gvi&quot;" Target="NI:Skyline:TagHTTP:Create\ Configuration\.gvi" xmlns="http://www.ni.com/MocCommon">
-				<p.MethodDeclaration>
-					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L0" Desc="server url" />
-						<Parameter Id="L1" Desc="error in" />
-						<Parameter Id="L2" Desc="username" />
-						<Parameter Id="L3" Desc="password" />
-						<Parameter Id="R0" Desc="configuration" />
-						<Parameter Id="R1" Desc="error out" />
-					</MethodDeclaration>
-				</p.MethodDeclaration>
-				<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="String" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@ae3934a0ef39403498032c0d2e51b286" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-			</MethodCall>
-			<Wire Id="376" Joints="N(256:R0)|(-430,140) h(65) B(1) N(411:o0)|(-349,140) B(1) v(-120) N(517:o0)|(-349,20) B(1) v(290) N(377:o0)|(-349,430)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="-580 135 40 15" DataType="String" Id="364" Label="366" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="376" Joints="N(557:R0)|(-425,80) h(60) B(1) v(-60) N(517:o0)|(-349,20) B(1) v(60) B(4) N(411:o0)|(-349,140) B(4) v(290) N(377:o0)|(-349,430)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-655 135 115 15" DataType="String" Id="364" Label="366" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>""</p.Data>
-				<StringBehavior TextDisplayMode="Default" />
+				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
 			<Literal Bounds="-520 450 145 15" DataType="String" Id="365" Label="367" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>ni-crio-9068-190cb7b</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="364" Bounds="-580 118 37 14" Id="366" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="364" Bounds="-655 118 37 14" Id="366" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Server</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="365" Bounds="-520 433 36 14" Id="367" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Target</p.Text>
 			</NodeLabel>
-			<Literal Bounds="-600 170 60 15" DataType="String" Id="370" Label="371" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="-655 170 115 15" DataType="String" Id="370" Label="371" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>""</p.Data>
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="370" Bounds="-600 153 55 14" Id="371" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="370" Bounds="-655 153 55 14" Id="371" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>username</p.Text>
 			</NodeLabel>
-			<Literal Bounds="-600 205 60 15" DataType="String" Id="373" Label="374" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="-655 205 115 15" DataType="String" Id="373" Label="374" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>""</p.Data>
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="373" Bounds="-600 188 53 14" Id="374" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="373" Bounds="-655 188 53 14" Id="374" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>password</p.Text>
 			</NodeLabel>
-			<Wire Id="368" Joints="N(364:Out)|(-540,140) N(256:L0)|(-470,140)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="368" Joints="N(364:Out)|(-540,140) h(5) v(-60) N(557:L0)|(-465,80)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="369" Joints="N(365:Out)|(-375,455) h(20) B(1) N(96:o0)|(-349,455) B(1) v(-300) N(18:o0)|(-349,155)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="372" Joints="N(370:Out)|(-540,175) h(10) v(-15) N(256:L2)|(-470,160)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="375" Joints="N(373:Out)|(-540,210) h(30) v(-40) N(256:L3)|(-470,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="372" Joints="N(370:Out)|(-540,175) h(10) v(-85) N(557:L1)|(-465,90)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="375" Joints="N(373:Out)|(-540,210) h(30) v(-110) N(557:L2)|(-465,100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-465 75 40 40" DomainName="NI:Skyline:Configuration" Id="557" ResolveFailedHint="Open Configuration.gvi, Package: (NI Skyline Common support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:Configuration:Open\ Configuration\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="server url" />
+						<Parameter Id="L1" Desc="username" />
+						<Parameter Id="L2" Desc="password" />
+						<Parameter Id="L3" Desc="error in" />
+						<Parameter Id="R0" Desc="configuration" />
+						<Parameter Id="R3" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
 		</BlockDiagram>
 		<HtmlFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;&#xA;    &lt;head&gt;&#xA;&#xA;        &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;        &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;        &lt;title&gt;Main&lt;/title&gt;&#xA;        &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;&#xA;        &lt;style ni-autogenerated-style-id=&quot;&quot;&gt;&#xA;            /* Read only section. Source panel edits to the content of this style tag will not be persisted */&#xA;            &#xA;            .ni-front-panel-wrapper {&#xA;                min-width: 2000px;&#xA;            }&#xA;            &#xA;            .ni-front-panel {&#xA;                width: 2000px;&#xA;                height: 1600px;&#xA;            }&#xA;            &#xA;            [data-ni-base-style] {&#xA;                position: absolute;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='215'] {&#xA;                left: 740px;&#xA;                top: 286px;&#xA;                width: 75px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-toggle-button[ni-control-id='214'] {&#xA;                left: 740px;&#xA;                top: 306px;&#xA;                width: 168px;&#xA;                height: 40px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='221'] {&#xA;                left: 740px;&#xA;                top: 346px;&#xA;                width: 77px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-toggle-button[ni-control-id='220'] {&#xA;                left: 740px;&#xA;                top: 366px;&#xA;                width: 168px;&#xA;                height: 40px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-chart[ni-control-id='230'] {&#xA;                left: 228px;&#xA;                top: 100px;&#xA;                width: 472px;&#xA;                height: 308px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-cartesian-axis[ni-control-id='231'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cartesian-axis[ni-control-id='232'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cartesian-plot[ni-control-id='233'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cartesian-plot[ni-control-id='234'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cartesian-plot[ni-control-id='235'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cartesian-plot[ni-control-id='236'] {&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='245'] {&#xA;                left: 228px;&#xA;                top: 80px;&#xA;                width: 37px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-plot-legend[ni-control-id='241'] {&#xA;                left: 699px;&#xA;                top: 100px;&#xA;                width: 150px;&#xA;                height: 104px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-cursor-legend[ni-control-id='242'] {&#xA;                left: 233px;&#xA;                top: 437px;&#xA;                width: 270px;&#xA;                height: 202px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-scale-legend[ni-control-id='243'] {&#xA;                left: 707px;&#xA;                top: 306px;&#xA;                width: 145px;&#xA;                height: 60px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-graph-tools[ni-control-id='244'] {&#xA;                left: 228px;&#xA;                top: 62px;&#xA;                width: 120px;&#xA;                height: 35px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='228'] {&#xA;                left: 84px;&#xA;                top: 160px;&#xA;                width: 96px;&#xA;                height: 22px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='229'] {&#xA;                left: 84px;&#xA;                top: 140px;&#xA;                width: 39px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-led[ni-control-id='212'] {&#xA;                left: 882px;&#xA;                top: 318px;&#xA;                width: 16px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-led[ni-control-id='212'] .jqx-true-content-container {&#xA;                background: rgba(67, 134, 185, 1);&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='213'] {&#xA;                left: 882px;&#xA;                top: 298px;&#xA;                width: 55px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='224'] {&#xA;                left: 84px;&#xA;                top: 280px;&#xA;                width: 96px;&#xA;                height: 22px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='225'] {&#xA;                left: 84px;&#xA;                top: 260px;&#xA;                width: 102px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='222'] {&#xA;                left: 84px;&#xA;                top: 340px;&#xA;                width: 96px;&#xA;                height: 22px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='223'] {&#xA;                left: 84px;&#xA;                top: 320px;&#xA;                width: 80px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='226'] {&#xA;                left: 84px;&#xA;                top: 220px;&#xA;                width: 96px;&#xA;                height: 22px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='227'] {&#xA;                left: 84px;&#xA;                top: 200px;&#xA;                width: 57px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-led[ni-control-id='216'] {&#xA;                left: 880px;&#xA;                top: 379px;&#xA;                width: 16px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-led[ni-control-id='216'] .jqx-true-content-container {&#xA;                background: rgba(67, 134, 185, 1);&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='217'] {&#xA;                left: 880px;&#xA;                top: 359px;&#xA;                width: 36px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            jqx-toggle-button[ni-control-id='478'] {&#xA;                left: 436px;&#xA;                top: 468px;&#xA;                width: 72px;&#xA;                height: 24px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='479'] {&#xA;                left: 436px;&#xA;                top: 448px;&#xA;                width: 43px;&#xA;                height: 16px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            /* End read only section. To add additional styles, add a new style tag after this one. */&#xA;        &lt;/style&gt;&#xA;&#xA;    &lt;/head&gt;&#xA;&#xA;    &lt;body&gt;&#xA;        &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;This browser is reporting compatibility with older browser technologies that may perform poorly if it all.&lt;/div&gt;&#xA;        &lt;div id=&quot;ni-failed-to-load-vireo-source&quot; style=&quot;display:none&quot;&gt;Unable to load required dependencies. Please verify all WebVI files are available and served using an http server or use a browser that can load files directly from the filesystem.&lt;/div&gt;&#xA;&#xA;        &lt;div class=&quot;ni-front-panel-wrapper&quot;&gt;&#xA;            &lt;section id=&quot;FrontPanelCanvas&quot; class=&quot;ni-front-panel&quot;&gt;&#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;            &lt;/section&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/body&gt;&#xA;&#xA;&lt;/html&gt;" Width="[float]2000" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Trigger Send&quot;" Height="[float]16" Id="215" LabelOwner="[UIModel]214" Left="[float]620" Text="[string]Trigger Send" Top="[float]194" Visible="[bool]False" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Send File" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]40" Id="214" IsMomentary="[bool]True" Label="[UIModel]215" Left="[float]620" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]6" Top="[float]214" Value="{DataItemBinding Id=203}" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Trigger Reset&quot;" Height="[float]16" Id="221" LabelOwner="[UIModel]220" Left="[float]620" Text="[string]Trigger Reset" Top="[float]254" Visible="[bool]False" Width="[float]77" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Reset Aggregates" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]40" Id="220" IsMomentary="[bool]True" Label="[UIModel]221" Left="[float]620" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]7" Top="[float]274" Value="{DataItemBinding Id=206}" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Trigger Send&quot;" Height="[float]16" Id="215" LabelOwner="[UIModel]214" Left="[float]868" Text="[string]Trigger Send" Top="[float]352" Visible="[bool]False" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Send File" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]40" Id="214" IsMomentary="[bool]True" Label="[UIModel]215" Left="[float]868" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]6" Top="[float]372" Value="{DataItemBinding Id=203}" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Trigger Reset&quot;" Height="[float]16" Id="221" LabelOwner="[UIModel]220" Left="[float]868" Text="[string]Trigger Reset" Top="[float]412" Visible="[bool]False" Width="[float]77" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlButton BaseName="[string]Button" ClickMode="[ClickMode]Release" Content="[string]Reset Aggregates" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]40" Id="220" IsMomentary="[bool]True" Label="[UIModel]221" Left="[float]868" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]7" Top="[float]432" Value="{DataItemBinding Id=206}" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]22" Id="228" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]229" Left="[float]68" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" TabIndex="[int]0" Top="[float]32" Value="{DataItemBinding Id=210}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;text&quot;=&quot;Buffer&quot;" Height="[float]16" Id="229" LabelOwner="[UIModel]228" Left="[float]68" Text="[string]Buffer" Top="[float]12" Width="[float]39" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" Extras="[Dictionary&lt;string, string&gt;]" FalseContent="[string]Off" Height="[float]16" Id="212" IsMomentary="[bool]False" Label="[UIModel]213" Left="[float]762" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]226" TrueContent="[string]On" Value="{DataItemBinding Id=202}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Send File&quot;" Height="[float]16" Id="213" LabelOwner="[UIModel]212" Left="[float]762" Text="[string]Send File" Top="[float]206" Visible="[bool]False" Width="[float]55" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" Extras="[Dictionary&lt;string, string&gt;]" FalseContent="[string]Off" Height="[float]16" Id="212" IsMomentary="[bool]False" Label="[UIModel]213" Left="[float]1010" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]384" TrueContent="[string]On" Value="{DataItemBinding Id=202}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Send File&quot;" Height="[float]16" Id="213" LabelOwner="[UIModel]212" Left="[float]1010" Text="[string]Send File" Top="[float]364" Visible="[bool]False" Width="[float]55" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]22" Id="224" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" Label="[UIModel]225" Left="[float]68" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]2" Top="[float]152" Value="{DataItemBinding Id=208}" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;text&quot;=&quot;Available Memory&quot;" Height="[float]16" Id="225" LabelOwner="[UIModel]224" Left="[float]68" Text="[string]Memory Usage" Top="[float]132" Width="[float]87" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]22" Id="222" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" Label="[UIModel]223" Left="[float]68" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]3" Top="[float]212" Value="{DataItemBinding Id=207}" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;text&quot;=&quot;Available Disk&quot;" Height="[float]16" Id="223" LabelOwner="[UIModel]222" Left="[float]68" Text="[string]Disk Usage" Top="[float]192" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]22" Id="226" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]227" Left="[float]68" MinHeight="[float]16" MinWidth="[float]36" RadixBase="[RadixBase]Decimal" TabIndex="[int]4" Top="[float]92" Value="{DataItemBinding Id=209}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]96" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;text&quot;=&quot;Files Sent&quot;" Height="[float]16" Id="227" LabelOwner="[UIModel]226" Left="[float]68" Text="[string]Files Sent" Top="[float]72" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" Extras="[Dictionary&lt;string, string&gt;]" FalseContent="[string]Off" Height="[float]16" Id="216" IsMomentary="[bool]False" Label="[UIModel]217" Left="[float]760" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]5" Top="[float]287" TrueContent="[string]On" Value="{DataItemBinding Id=204}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Reset&quot;" Height="[float]16" Id="217" LabelOwner="[UIModel]216" Left="[float]760" Text="[string]Reset" Top="[float]267" Visible="[bool]False" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlChart DataSource="{DataItemBinding Id=488}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]280" Id="490" Label="[UIModel]501" Left="[float]196" TabIndex="[int]8" Top="[float]36" Width="[float]392" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<HtmlBooleanLED BaseName="[string]LED" ClickMode="[ClickMode]Press" Extras="[Dictionary&lt;string, string&gt;]" FalseContent="[string]Off" Height="[float]16" Id="216" IsMomentary="[bool]False" Label="[UIModel]217" Left="[float]1008" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]5" Top="[float]445" TrueContent="[string]On" Value="{DataItemBinding Id=204}" Width="[float]16" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]&quot;class&quot;=&quot;ni-hidden&quot;,&quot;text&quot;=&quot;Reset&quot;" Height="[float]16" Id="217" LabelOwner="[UIModel]216" Left="[float]1008" Text="[string]Reset" Top="[float]425" Visible="[bool]False" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlChart DataSource="{DataItemBinding Id=488}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]436" Id="490" Label="[UIModel]501" Left="[float]196" TabIndex="[int]8" Top="[float]36" Width="[float]648" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<HtmlAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="491" Label="[string]Sample" MajorDivisions="[UIModel]494" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
 					<HtmlRangeLabeledDivisions Id="494" LabelPresenter="[string]LVRelativeSeconds:0" />
 				</HtmlAxis>
@@ -839,11 +838,11 @@
 					<HtmlPlotRenderer Id="509" LineStroke="[SMSolidColorBrush]#ffb7ac1f" />
 				</HtmlPlot>
 			</HtmlChart>
-			<HtmlScaleLegend Graph="[UIModel]490" Height="[float]60" Id="497" Left="[float]587" MinWidth="[float]145" Top="[float]256" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlPlotLegend Graph="[UIModel]490" Height="[float]104" Id="498" Left="[float]587" MinWidth="[float]145" Top="[float]36" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlCursorLegend Graph="[UIModel]490" Height="[float]200" Id="499" Left="[float]196" MinWidth="[float]320" Top="[float]361" Visible="[bool]False" Width="[float]320" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlGraphTools Graph="[UIModel]490" Height="[float]35" Id="500" Left="[float]196" Top="[float]321" Visible="[bool]False" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]10" Id="501" LabelOwner="[UIModel]490" Left="[float]196" Text="[string]Chart" Top="[float]16" Visible="[bool]False" Width="[float]10" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlScaleLegend Graph="[UIModel]490" Height="[float]60" Id="497" Left="[float]843" MinWidth="[float]145" Top="[float]412" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlPlotLegend Graph="[UIModel]490" Height="[float]104" Id="498" Left="[float]843" MinWidth="[float]145" Top="[float]36" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlCursorLegend Graph="[UIModel]490" Height="[float]200" Id="499" Left="[float]196" MinWidth="[float]320" Top="[float]517" Visible="[bool]False" Width="[float]320" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlGraphTools Graph="[UIModel]490" Height="[float]35" Id="500" Left="[float]196" Top="[float]477" Visible="[bool]False" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="501" LabelOwner="[UIModel]490" Left="[float]196" Text="[string]Chart" Top="[float]16" Visible="[bool]False" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="202" Name="Send File" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
@@ -872,24 +871,15 @@
 		<DataItem AdaptToDiagramType="True" BufferSize="1024" DataType="@6795b2ab0f664f0d959c3a64e7fa34be" Id="488" Name="Chart" xmlns="http://www.ni.com/MocCommon" />
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="cfe0110e1a7e47bca89317e280d652bb">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Server URL" DataType="String" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Session" DataType="@947d6c56ec454f9ca31adc474ee0cee1" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="c571a2f2aa154764ba3f71aa199b85f0">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="configuration" DataType="@a21d92f9f2dd418b9a657c979b61e7ef" />
-					<Field FieldAccessPolicy="ReadWrite" Name="token" DataType="String" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="a21d92f9f2dd418b9a657c979b61e7ef">
+		<p.TypeReference TypeId="a1bcf8f3d2dd4c7eab87395358df6a64">
 			<Attributed AttributedType="@f8ca837335d74693825cdcfba505cfd5">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:Configuration" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b31c8e8a63d44561a129b90cb43d7f27">
+			<Attributed AttributedType="@ec805ba8c12844dfac25f6a6d3634b11">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:MessageHTTP" />
 				</AttributeValues>
@@ -902,15 +892,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="ae3934a0ef39403498032c0d2e51b286">
-			<Attributed AttributedType="@f8ca837335d74693825cdcfba505cfd5">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:TagHTTP" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="00caea145cdc4facb78827ec5b9ff6d7">
-			<Attributed AttributedType="@0bbc9400b7e54c5f8135c11c146663f2">
+		<p.TypeReference TypeId="d852df8413f2475182f4009a3099c0e2">
+			<Attributed AttributedType="@829e9e65a0f34213a12820d84bdb370a">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:TagHTTP" />
 				</AttributeValues>
@@ -940,21 +923,17 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="947d6c56ec454f9ca31adc474ee0cee1">
-			<Attributed AttributedType="@c36a7587c369402c99076f34832b1e39">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:HTTP" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
 		<p.TypeReference TypeId="f8ca837335d74693825cdcfba505cfd5">
 			<Typedef TypedefName="Configuration.gtype" UnderlyingType="@cfe0110e1a7e47bca89317e280d652bb" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ec805ba8c12844dfac25f6a6d3634b11">
+			<Typedef TypedefName="Message Session.gtype" UnderlyingType="@333f31b309394aeeb6f5e46df73444d1" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="7810256c66fc485eb0c43be1effec983">
 			<Typedef TypedefName="DataType.gtype" UnderlyingType="@dce2ad463e2b4b4095dd76137fa9af5f" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="0bbc9400b7e54c5f8135c11c146663f2">
-			<Typedef TypedefName="Tag.gtype" UnderlyingType="@8ddfac1314cd481286a1381fb980af10" />
+		<p.TypeReference TypeId="829e9e65a0f34213a12820d84bdb370a">
+			<Typedef TypedefName="Tag.gtype" UnderlyingType="@79e363db9aa44d72935f37c0fd43625e" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="66f023b9a2174775884e6536eeb42101">
 			<Typedef TypedefName="Aggregates Double.gtype" UnderlyingType="@79be6ffdedb745148420e14f4a53114d" />
@@ -962,8 +941,21 @@
 		<p.TypeReference TypeId="7c3ef9e76d9442bf994aa438795057c8">
 			<Typedef TypedefName="Aggregates Int.gtype" UnderlyingType="@e25f781a02a5431f8749c4db7d9c0f8d" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="c36a7587c369402c99076f34832b1e39">
-			<Typedef TypedefName="Client Handle.gtype" UnderlyingType="UInt32" />
+		<p.TypeReference TypeId="cfe0110e1a7e47bca89317e280d652bb">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Server URL" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Session" DataType="@947d6c56ec454f9ca31adc474ee0cee1" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="333f31b309394aeeb6f5e46df73444d1">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" />
+					<Field FieldAccessPolicy="ReadWrite" Name="token" DataType="String" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="dce2ad463e2b4b4095dd76137fa9af5f">
 			<Enumeration>
@@ -975,12 +967,12 @@
 				<DataType>UInt32</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="8ddfac1314cd481286a1381fb980af10">
+		<p.TypeReference TypeId="79e363db9aa44d72935f37c0fd43625e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Path" DataType="String" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Datatype" DataType="@21b3849648ba4fa9b3bafb76b7cbe655" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@ae3934a0ef39403498032c0d2e51b286" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@a1bcf8f3d2dd4c7eab87395358df6a64" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -1003,6 +995,16 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Mean" DataType="Double" />
 				</Members>
 			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="947d6c56ec454f9ca31adc474ee0cee1">
+			<Attributed AttributedType="@c36a7587c369402c99076f34832b1e39">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:HTTP" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c36a7587c369402c99076f34832b1e39">
+			<Typedef TypedefName="Client Handle.gtype" UnderlyingType="UInt32" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
@@ -1144,7 +1146,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="NI:Skyline:TagHTTP:Create\ Configuration\.gvi">
+		<p.IconModel Target="NI:Skyline:Configuration:Open\ Configuration\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
