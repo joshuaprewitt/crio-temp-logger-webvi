@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="436720871FCA28E4A3B35C8F76D3CB68" Timestamp="1D38AA46B484706" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4489F453F579A1881F9B35DA5D5ABF92" Timestamp="1D3B648DCB796CB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.58310" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.58310" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -99,8 +99,8 @@
 								</MethodDeclaration>
 							</p.MethodDeclaration>
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@75cdf08b4fa24f4ba4cf9f760226d7eb" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@abade1ef600f426ebcec2f0db2ba75cf" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<MethodCall Bounds="185 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="511" ResolveFailedHint="Publish.gvi, Package: (NI Skyline Message support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:MessageHTTP:Publish\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -114,11 +114,11 @@
 									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@75cdf08b4fa24f4ba4cf9f760226d7eb" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@abade1ef600f426ebcec2f0db2ba75cf" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@75cdf08b4fa24f4ba4cf9f760226d7eb" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@abade1ef600f426ebcec2f0db2ba75cf" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<MethodCall Bounds="250 80 40 40" DomainName="NI:Skyline:MessageHTTP" Id="524" ResolveFailedHint="Close.gvi, Package: (NI Skyline Message support for LabVIEW NXG 2.0, Version: 18.0.0)" Target="NI:Skyline:MessageHTTP:Close\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -130,9 +130,9 @@
 									<Parameter Id="R3" Desc="error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
-							<Terminal DataType="@75cdf08b4fa24f4ba4cf9f760226d7eb" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@abade1ef600f426ebcec2f0db2ba75cf" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<Wire Id="525" Joints="N(511:R0)|(225,85) N(524:L0)|(250,85)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -195,7 +195,7 @@
 						</NodeLabel>
 						<ConcatenateStrings Bounds="125 45 40 30" Id="78" Terminals="outString=84, c0t0v=81, c1t0v=80, c2t0v=249" VerticalChunkCount="3" />
 						<Literal Bounds="113 55 12 10" DataType="String" Id="79" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>.ai.</p.Data>
+							<p.Data>.cRIO_Temp_Monitor.ai.</p.Data>
 							<StringBehavior TextDisplayMode="Default" />
 							<DockedConstantFacade UndockedSize="40 15" />
 						</Literal>
@@ -224,7 +224,7 @@
 							<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
@@ -316,7 +316,7 @@
 					<ArrayBehavior ElementType="String" IndexEditorWidth="42" VisibleRows="5">
 						<p.DefaultElementValue>""</p.DefaultElementValue>
 					</ArrayBehavior>
-					<Literal Bounds="49 4 195 18" DataType="String" Id="110">
+					<Literal Bounds="49 104 195 18" DataType="String" Id="110">
 						<StringBehavior TextDisplayMode="Default" />
 					</Literal>
 				</ArrayLiteral>
@@ -353,7 +353,7 @@
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
@@ -430,7 +430,7 @@
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
@@ -507,7 +507,7 @@
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
@@ -584,7 +584,7 @@
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
@@ -676,7 +676,7 @@
 								<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@689ae5f3444e48ddbc0df9d227fa0506" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Input" Hotspot="15 0" Id="T0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="@d852df8413f2475182f4009a3099c0e2" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
@@ -751,28 +751,28 @@
 			</WhileLoop>
 			<Wire Id="376" Joints="N(557:R0)|(-425,80) h(60) B(1) v(-60) N(517:o0)|(-349,20) B(1) v(60) B(4) N(411:o0)|(-349,140) B(4) v(290) N(377:o0)|(-349,430)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-655 135 115 15" DataType="String" Id="364" Label="366" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>""</p.Data>
+				<p.Data>demo.systemlink.io</p.Data>
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
-			<Literal Bounds="-540 450 165 15" DataType="String" Id="365" Label="367" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>cRIO-9068--SN-190CB7B</p.Data>
+			<Literal Bounds="-690 450 315 15" DataType="String" Id="365" Label="367" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>cRIO-9068--SN-190CB7B--MAC-00-80-2F-15-AC-43</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<NodeLabel AttachedTo="364" Bounds="-655 118 37 14" Id="366" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Server</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="365" Bounds="-540 433 36 14" Id="367" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="365" Bounds="-690 433 36 14" Id="367" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Target</p.Text>
 			</NodeLabel>
 			<Literal Bounds="-655 170 115 15" DataType="String" Id="370" Label="371" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>""</p.Data>
+				<p.Data>admin</p.Data>
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
 			<NodeLabel AttachedTo="370" Bounds="-655 153 55 14" Id="371" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>username</p.Text>
 			</NodeLabel>
 			<Literal Bounds="-655 205 115 15" DataType="String" Id="373" Label="374" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>""</p.Data>
+				<p.Data>labview===</p.Data>
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
 			<NodeLabel AttachedTo="373" Bounds="-655 188 53 14" Id="374" xmlns="http://www.ni.com/PlatformFramework">
@@ -797,7 +797,7 @@
 				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@8c03f3c44a264a79845630e84286a587" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 		</BlockDiagram>
@@ -871,15 +871,15 @@
 		<DataItem AdaptToDiagramType="True" BufferSize="1024" DataType="@6795b2ab0f664f0d959c3a64e7fa34be" Id="488" Name="Chart" xmlns="http://www.ni.com/MocCommon" />
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="8c03f3c44a264a79845630e84286a587">
-			<Attributed AttributedType="@1100576d27974ecdb6c80f3e0affaf27">
+		<p.TypeReference TypeId="2d62f8f48bbc460da4a9c460fd4e0a16">
+			<Attributed AttributedType="@78d1cbefdcdf4d9e9435a38ab191bd82">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:Configuration" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="75cdf08b4fa24f4ba4cf9f760226d7eb">
-			<Attributed AttributedType="@5f001982f050449fae0e72c6b9f9ebac">
+		<p.TypeReference TypeId="abade1ef600f426ebcec2f0db2ba75cf">
+			<Attributed AttributedType="@d30451b0957343c580b45e784f4583b9">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:Skyline:MessageHTTP" />
 				</AttributeValues>
@@ -923,11 +923,11 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="1100576d27974ecdb6c80f3e0affaf27">
-			<Typedef TypedefName="Configuration.gtype" UnderlyingType="@990a6cc5021f4c46993425963f92fcfe" />
+		<p.TypeReference TypeId="78d1cbefdcdf4d9e9435a38ab191bd82">
+			<Typedef TypedefName="Configuration.gtype" UnderlyingType="@4fa9e72ec16b4105b7f7f79ef6acf1ca" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="5f001982f050449fae0e72c6b9f9ebac">
-			<Typedef TypedefName="Message Session.gtype" UnderlyingType="@ea6b5b13e11f43779186a93a8d69ab1b" />
+		<p.TypeReference TypeId="d30451b0957343c580b45e784f4583b9">
+			<Typedef TypedefName="Message Session.gtype" UnderlyingType="@af0857166e954f59a8bc156b16bf0c93" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="e829f047d32547d4aefc7c50a6a2047d">
 			<Typedef TypedefName="DataType.gtype" UnderlyingType="@d410131c42cb4d08a7819eb07451aa33" />
@@ -941,7 +941,7 @@
 		<p.TypeReference TypeId="a0ea28969b6b44a08e42a325a2e18824">
 			<Typedef TypedefName="Aggregates Int.gtype" UnderlyingType="@d73bea8d13094b9787221dd9c7f26696" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="990a6cc5021f4c46993425963f92fcfe">
+		<p.TypeReference TypeId="4fa9e72ec16b4105b7f7f79ef6acf1ca">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Server URL" DataType="String" />
@@ -949,10 +949,10 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="ea6b5b13e11f43779186a93a8d69ab1b">
+		<p.TypeReference TypeId="af0857166e954f59a8bc156b16bf0c93">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@8c03f3c44a264a79845630e84286a587" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" />
 					<Field FieldAccessPolicy="ReadWrite" Name="token" DataType="String" />
 				</Members>
 			</Composite>
@@ -972,7 +972,7 @@
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Path" DataType="String" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Datatype" DataType="@689ae5f3444e48ddbc0df9d227fa0506" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@8c03f3c44a264a79845630e84286a587" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration" DataType="@2d62f8f48bbc460da4a9c460fd4e0a16" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
