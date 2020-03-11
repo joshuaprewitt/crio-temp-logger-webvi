@@ -2,11 +2,11 @@
 <JobList>
   <Job OutputType="WebApplication">
     <CurrentBuildId>
-      <DistributionTypeIdentifier>WebApplication</DistributionTypeIdentifier>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
       <BuildId>C:\Users\Public\GitHub\crio-temp-logger-webvi\Temp Logger Web Application\Builds\WebApp_Web Server</BuildId>
     </CurrentBuildId>
     <RootBuildId>
-      <DistributionTypeIdentifier>WebApplication</DistributionTypeIdentifier>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
       <BuildId>C:\Users\Public\GitHub\crio-temp-logger-webvi\Temp Logger Web Application\Builds\WebApp_Web Server</BuildId>
     </RootBuildId>
     <OutputPath>Builds\WebApp_Web Server</OutputPath>
@@ -14,6 +14,6 @@
     <State>Success</State>
     <LastTotalTime>00:00:06</LastTotalTime>
     <HasChild>False</HasChild>
-    <QualifiedName>:Web\ Server:Interactive:WebApp\.gcomp</QualifiedName>
+    <QualifiedName>::Web Server::Interactive::WebApp.gcomp</QualifiedName>
   </Job>
 </JobList>
