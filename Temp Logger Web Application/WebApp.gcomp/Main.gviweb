@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="FD3F1EB33CD9526143C0A462C8BCFC88B1B11DE585745ECC5BB552E96191787B70C2431B9956F792EB3B186C9E67E7240E1416A963CEA000EEB2CCE59EE1F42F" Timestamp="1D5F7ADC7EAED36" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1B85440C4671763FF63D5C3137F2BA0290D2D10B3C98C88EB740768E8EF1BD692BFC541067523E33D2A0B937208B946568E81D93AE3CB703CE835F1D1F5A9F0B" Timestamp="1D5F7AEE51B951F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -316,7 +316,7 @@
 					<ArrayBehavior ElementType="String" IndexEditorWidth="42" VisibleRows="5">
 						<p.DefaultElementValue>""</p.DefaultElementValue>
 					</ArrayBehavior>
-					<Literal Bounds="48 27 195 23" DataType="String" Id="110">
+					<Literal Bounds="48 2 195 23" DataType="String" Id="110">
 						<StringBehavior TextDisplayMode="Default" />
 					</Literal>
 				</ArrayLiteral>
@@ -866,7 +866,7 @@
 					</p.ElementAttributes>
 				</HtmlBehavior>
 			</Label>
-			<Chart DataSource="{DataItemBinding Id=488}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]436" Id="490" Label="[UIModel]501" Left="[float]196" TabIndex="[int]8" Top="[float]36" Width="[float]648" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<Chart DataSource="{DataItemBinding Id=488}" DataSourceType="[Type]@6795b2ab0f664f0d959c3a64e7fa34be" Height="[float]436" Id="490" Label="[UIModel]501" Left="[float]196" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" TabIndex="[int]8" Top="[float]36" Width="[float]648" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<Axis Adjuster="[RangeAdjuster]ContinuousChart" Id="491" Label="[string]Sample" MajorDivisions="[UIModel]494" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
 					<RangeLabeledDivisions Id="494">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
