@@ -5,6 +5,7 @@
 		<file old-name="Configuration.gtype" new-name="NI::Skyline::Configuration::Configuration.gtype" />
 		<file old-name="Default Configuration.gtype" new-name="NI::Skyline::Configuration::Default Configuration.gtype" />
 		<file old-name="Default Refcount Store Action.gtype" new-name="NI::Skyline::Configuration::Default Refcount Store Action.gtype" />
+		<file old-name="Workspace.gtype" new-name="NI::Skyline::Configuration::Workspace.gtype" />
 		<file old-name="base64.gvi" new-name="NI::Skyline::Configuration::base64.gvi" />
 		<file old-name="Check In Session.gvi" new-name="NI::Skyline::Configuration::Check In Session.gvi" />
 		<file old-name="Check Out Session.gvi" new-name="NI::Skyline::Configuration::Check Out Session.gvi" />
@@ -28,11 +29,14 @@
 		<file old-name="Open Default Configuration.gvi" new-name="NI::Skyline::Configuration::Open Default Configuration.gvi" />
 		<file old-name="Open Session with Credentials.gvi" new-name="NI::Skyline::Configuration::Open Session with Credentials.gvi" />
 		<file old-name="Read Configuration File.gvi" new-name="NI::Skyline::Configuration::Read Configuration File.gvi" />
+		<file old-name="Report HTTP Library Not Found Error.gvi" new-name="NI::Skyline::Configuration::Report HTTP Library Not Found Error.gvi" />
 		<file old-name="Validate Auto Configuration.gvi" new-name="NI::Skyline::Configuration::Validate Auto Configuration.gvi" />
+		<file old-name="Validate Server URL.gvi" new-name="NI::Skyline::Configuration::Validate Server URL.gvi" />
 		<file old-name="RootEnvoy" new-name="NI::Skyline::Configuration::RootEnvoy" />
 		<file old-name="Auto Configuration.gtype::ControlDefinition" new-name="NI::Skyline::Configuration::Auto Configuration.gtype::ControlDefinition" />
 		<file old-name="Configuration.gtype::ControlDefinition" new-name="NI::Skyline::Configuration::Configuration.gtype::ControlDefinition" />
 		<file old-name="Default Configuration.gtype::ControlDefinition" new-name="NI::Skyline::Configuration::Default Configuration.gtype::ControlDefinition" />
 		<file old-name="Default Refcount Store Action.gtype::ControlDefinition" new-name="NI::Skyline::Configuration::Default Refcount Store Action.gtype::ControlDefinition" />
+		<file old-name="Workspace.gtype::ControlDefinition" new-name="NI::Skyline::Configuration::Workspace.gtype::ControlDefinition" />
 	</files>
 </upgradefile>

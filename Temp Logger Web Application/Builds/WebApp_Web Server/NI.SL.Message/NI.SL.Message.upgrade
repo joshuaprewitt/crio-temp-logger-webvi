@@ -5,6 +5,7 @@
 		<file old-name="Close.gvi" new-name="NI::Skyline::MessageHTTP::Close.gvi" />
 		<file old-name="Flush.gvi" new-name="NI::Skyline::MessageHTTP::Flush.gvi" />
 		<file old-name="Form Configurations URL.gvi" new-name="NI::Skyline::MessageHTTP::Form Configurations URL.gvi" />
+		<file old-name="Form Message Request.gvi" new-name="NI::Skyline::MessageHTTP::Form Message Request.gvi" />
 		<file old-name="Form Messages URL.gvi" new-name="NI::Skyline::MessageHTTP::Form Messages URL.gvi" />
 		<file old-name="Form Sessions URL.gvi" new-name="NI::Skyline::MessageHTTP::Form Sessions URL.gvi" />
 		<file old-name="Form Subscriptions URL.gvi" new-name="NI::Skyline::MessageHTTP::Form Subscriptions URL.gvi" />

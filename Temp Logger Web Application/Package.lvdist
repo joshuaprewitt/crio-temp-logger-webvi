@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B204C4385CFDCBC1FC721F816B81A0F74B0D92BEF1EEE3C9FDC78D6640C90DA1BFE91231AED941BAF2A197C4794F74501F84BADB49B24C069DA11C9822BAE11C" Timestamp="1D76EBFFBC79971" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.4.0.49575" Name="LabVIEW NXG" Version="5.1.0" />
+	</SourceModelFeatureSet>
+	<DistributionDefinition Company="National Instruments" Product="cRIO Temp Logger" ShortDescription="National Instruments Temp Logger Web Application" TargetedProduct="LabVIEW" Version="5.1.0.1" xmlns="http://www.ni.com/GComponent.xsd">
+		<DistributionOutput CachedDisplayName="Package" Id="26129b42eb034055814fe897960235ec" OutputTypeIdentifier="DistributionOutputType:NiPackage" p3:CustomNipmPackageName="ni-temp-logger" p3:DistributionCategory="Application" p3:MaintainerEmail="joshua.prewitt@ni.com" p3:MaintainerName="National Instruments" p3:PackageDisplayName="cRIO Temp Logger" xmlns:p3="http://www.ni.com/GComponent.xsd" />
+		<DistributionBuildTarget Id="374f94234da04da79b6b33bec6ef429d" Target="::Web Server" />
+		<DistributionMemberDependencySource Id="1063c88049894f188e130d15aadae4e3" MemberContentType="{http://www.ni.com/GComponent.xsd}Component_Rebuild" RootLocation="ApplicationFiles_64" Target="::Web Server::Interactive::WebApp.gcomp" />
+		<DistributionDependencyContent DisplayName="NI Web Server" Id="95054f031dea40a1bc97a04285eb7df3" Included="False" MaintainerName="National Instruments" Name="ni-webserver" Version="21.1.0.30-0+d30" />
+	</DistributionDefinition>
+</SourceFile>

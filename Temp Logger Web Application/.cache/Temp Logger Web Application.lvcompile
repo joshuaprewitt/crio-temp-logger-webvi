@@ -36,7 +36,7 @@
     <HasChild>False</HasChild>
     <IsStale>True</IsStale>
     <QualifiedName></QualifiedName>
-    <HintEnvoy>::Web Server::Interactive::WebApp.gcomp</HintEnvoy>
+    <HintEnvoy></HintEnvoy>
   </Job>
   <Job OutputType="WebApplication">
     <CurrentBuildId>
@@ -52,6 +52,44 @@
     <State>Success</State>
     <LastTotalTime>00:00:01</LastTotalTime>
     <StartTime>2020-03-11T14:11:04.3372987Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy>::Web Server::Interactive::WebApp.gcomp</HintEnvoy>
+  </Job>
+  <Job OutputType="Distribution:NiPackagePartial">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Distribution:NiPackagePartial</ComponentSubtypeIdentifier>
+      <BuildId>7e353d5b-628e-4ecf-93cf-ef13cbb46fc9</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Distribution:NiPackagePartial</ComponentSubtypeIdentifier>
+      <BuildId>7e353d5b-628e-4ecf-93cf-ef13cbb46fc9</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Package\ni-temp-logger_5.1.0.0_windows_x64.nipkg</OutputPath>
+    <BuildName>Package</BuildName>
+    <State>Success</State>
+    <LastTotalTime>00:00:07</LastTotalTime>
+    <StartTime>2021-07-01T21:26:28.9952472Z</StartTime>
+    <HasChild>True</HasChild>
+    <IsStale>False</IsStale>
+    <QualifiedName>::NullTarget::Package.lvdist</QualifiedName>
+    <HintEnvoy>::NullTarget::Package.lvdist</HintEnvoy>
+  </Job>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>84f7fb64-1e32-4c63-a3d7-09bd7dbbf124</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Distribution:NiPackagePartial</ComponentSubtypeIdentifier>
+      <BuildId>7e353d5b-628e-4ecf-93cf-ef13cbb46fc9</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\WebApp_Web Server</OutputPath>
+    <BuildName>WebApp</BuildName>
+    <State>Success</State>
+    <LastTotalTime>00:00:03</LastTotalTime>
+    <StartTime>2021-07-01T21:26:29.1651508Z</StartTime>
     <HasChild>False</HasChild>
     <IsStale>False</IsStale>
     <QualifiedName>::Web Server::Interactive::WebApp.gcomp</QualifiedName>
